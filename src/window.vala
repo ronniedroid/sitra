@@ -27,7 +27,8 @@ public class Sitra.Window : Adw.ApplicationWindow {
     [GtkChild] private unowned Gtk.ListView fonts_list;
     [GtkChild] private unowned Adw.NavigationSplitView split_view;
     [GtkChild] private unowned Adw.NavigationPage preview_page;
-    [GtkChild] private unowned Gtk.Stack preview_stack;
+    [GtkChild] private unowned Adw.ViewStack content_stack;
+    [GtkChild] private unowned Adw.ViewSwitcher view_switcher;
     [GtkChild] private unowned Adw.WrapBox categories;
     [GtkChild] private unowned Gtk.ToggleButton search_button;
     [GtkChild] private unowned Gtk.SearchBar search_bar;
@@ -41,9 +42,17 @@ public class Sitra.Window : Adw.ApplicationWindow {
     [GtkChild] private unowned Gtk.ToggleButton italic_toggle;
     [GtkChild] private unowned Adw.Banner banner;
     [GtkChild] private unowned Gtk.Popover license_popover;
+
+    // Details Page Widgets
+    [GtkChild] private unowned Adw.ActionRow details_family_row;
+    [GtkChild] private unowned Adw.ActionRow details_category_row;
     [GtkChild] private unowned Gtk.MenuButton license_button;
-    [GtkChild] private unowned Gtk.Button integrate_button;
-    [GtkChild] private unowned Gtk.Button install_button;
+    [GtkChild] private unowned Adw.ActionRow details_variable_row;
+    [GtkChild] private unowned Gtk.Image details_variable_icon;
+    [GtkChild] private unowned Adw.ExpanderRow details_subsets_row;
+    [GtkChild] private unowned Adw.ExpanderRow details_styles_row;
+    [GtkChild] private unowned Gtk.Button details_integrate_button;
+    [GtkChild] private unowned Gtk.Button details_install_button;
 
     private WebView web_view;
     private Gee.HashMap<string, Gtk.ToggleButton> category_toggles;
@@ -57,6 +66,10 @@ public class Sitra.Window : Adw.ApplicationWindow {
     private Gtk.FilterListModel filtered_model;
     private Gtk.SingleSelection fonts_model;
 
+    // Tracking lists for dynamic rows to clear them properly
+    private Gee.ArrayList<Gtk.Widget> subset_rows;
+    private Gee.ArrayList<Gtk.Widget> style_rows;
+
     public Window (Adw.Application app) {
         Object (application: app);
 
@@ -65,7 +78,11 @@ public class Sitra.Window : Adw.ApplicationWindow {
         integration_dialog = new Sitra.IntegrationDialog ();
         network_helper = Sitra.Helpers.NetworkHelper.get_instance ();
 
+        subset_rows = new Gee.ArrayList<Gtk.Widget> ();
+        style_rows = new Gee.ArrayList<Gtk.Widget> ();
+
         banner.set_revealed (false);
+        view_switcher.visible = false;
 
         // --- Load JSON font data ---
         string json_data = "";
@@ -136,6 +153,8 @@ public class Sitra.Window : Adw.ApplicationWindow {
 
         Idle.add (() => {
             fonts_model.unselect_all ();
+            content_stack.set_visible_child_name ("welcome");
+            view_switcher.visible = false;
             return false;
         });
 
@@ -201,6 +220,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
                 update_italic_toggle_state (family);
                 update_preview (family);
                 update_license_popover (family);
+                update_details_page (family);
             }
         });
 
@@ -215,6 +235,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
             update_italic_toggle_state (family);
             update_preview (family);
             update_license_popover (family);
+            update_details_page (family);
 
             if (split_view.get_collapsed ())
                 split_view.set_show_content (true);
@@ -231,9 +252,9 @@ public class Sitra.Window : Adw.ApplicationWindow {
         });
 
         banner.button_clicked.connect (() => {
-                banner.set_revealed (false);
-                var string_object = (Gtk.StringObject) fonts_model.selected_item;
-                update_preview (string_object.string);
+            banner.set_revealed (false);
+            var string_object = (Gtk.StringObject) fonts_model.selected_item;
+            update_preview (string_object.string);
         });
 
         preview_entry.changed.connect (() => {
@@ -259,7 +280,6 @@ public class Sitra.Window : Adw.ApplicationWindow {
             if (fonts_model.selected_item != null) {
                 var string_object = (Gtk.StringObject) fonts_model.selected_item;
                 update_preview (string_object.string);
-
             }
         });
 
@@ -275,7 +295,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
             search_bar.search_mode_enabled = !search_bar.search_mode_enabled;
         });
 
-        integrate_button.clicked.connect (() => {
+        details_integrate_button.clicked.connect (() => {
             if (fonts_model.selected_item != null) {
                 var string_object = (Gtk.StringObject) fonts_model.selected_item;
                 var font = fonts_manager.get_font (string_object.string);
@@ -286,6 +306,21 @@ public class Sitra.Window : Adw.ApplicationWindow {
             }
         });
 
+        details_install_button.clicked.connect (() => {
+            // Placeholder for install logic
+            // For now just print to stdout
+            if (fonts_model.selected_item != null) {
+                var string_object = (Gtk.StringObject) fonts_model.selected_item;
+                print ("Download requested for: %s\n", string_object.string);
+            }
+        });
+
+        content_stack.notify["visible-child"].connect (() => {
+            if (view_switcher.visible) {
+                var current_page = content_stack.get_visible_child_name ();
+                bottom_action_bar.visible = (current_page == "preview");
+            }
+        });
     }
 
     // --- Helpers ---
@@ -307,14 +342,18 @@ public class Sitra.Window : Adw.ApplicationWindow {
     private void update_preview (string family_name) {
         if (!network_helper.has_connectivity ()) {
             banner.set_revealed (true);
-            preview_stack.set_visible_child_name ("status");
-            set_visibility(false);
+            content_stack.set_visible_child_name ("status");
+            set_visibility (false);
             return;
         }
 
-        preview_stack.set_visible_child_name ("preview");
+        var current_page = content_stack.get_visible_child_name ();
+        if (current_page == "welcome" || current_page == "status") {
+            content_stack.set_visible_child_name ("preview");
+        }
+
         banner.set_revealed (false);
-        set_visibility(true);
+        set_visibility (true);
 
         var preview_font = fonts_manager.get_font (family_name);
         if (preview_font == null) {
@@ -337,11 +376,15 @@ public class Sitra.Window : Adw.ApplicationWindow {
     }
 
     private void set_visibility (bool val) {
-                bottom_action_bar.set_visible(val);
-                install_button.set_visible(val);
-                integrate_button.set_visible(val);
-                license_button.set_visible(val);
+        view_switcher.visible = val;
+
+        if (val) {
+            var current_page = content_stack.get_visible_child_name ();
+            bottom_action_bar.visible = (current_page == "preview");
+        } else {
+            bottom_action_bar.visible = false;
         }
+    }
 
     private void bind_dropdown_to_property (Gtk.DropDown dropdown,
                                             Object target,
@@ -367,5 +410,51 @@ public class Sitra.Window : Adw.ApplicationWindow {
             return;
 
         licenses_manager.populate_popover (license_popover, font);
+        license_button.set_label (font.license);
+    }
+
+    private void update_details_page (string family_name) {
+        var font = fonts_manager.get_font (family_name);
+        if (font == null)return;
+
+        details_family_row.subtitle = font.family;
+        details_category_row.subtitle = font.category;
+
+        if (font.variable) {
+            details_variable_row.subtitle = "Yes";
+            details_variable_icon.set_from_icon_name ("emblem-ok-symbolic");
+        } else {
+            details_variable_row.subtitle = "No";
+            details_variable_icon.set_from_icon_name ("emblem-remove-symbolic");
+        }
+
+        // Clear previous rows
+        foreach (var child in subset_rows) {
+            details_subsets_row.remove (child);
+        }
+        subset_rows.clear ();
+
+        foreach (var child in style_rows) {
+            details_styles_row.remove (child);
+        }
+        style_rows.clear ();
+
+        if (font.subsets != null) {
+            foreach (var subset in font.subsets) {
+                var row = new Adw.ActionRow ();
+                row.title = subset;
+                details_subsets_row.add_row (row);
+                subset_rows.add (row);
+            }
+        }
+
+        if (font.styles != null) {
+            foreach (var style in font.styles) {
+                var row = new Adw.ActionRow ();
+                row.title = style;
+                details_styles_row.add_row (row);
+                style_rows.add (row);
+            }
+        }
     }
 }

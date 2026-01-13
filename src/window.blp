@@ -97,27 +97,10 @@ template $SitraWindow: Adw.ApplicationWindow {
         Adw.HeaderBar {
           show-title: true;
 
-          [end]
-          MenuButton license_button {
-            icon-name: "sitra-license-symbolic";
-            tooltip-text: _("License details");
-            popover: license_popover;
-            visible: false;
-          }
-
-          [end]
-          Button integrate_button {
-            icon-name: "sitra-integrate-symbolic";
-            tooltip-text: _("Integrate");
-            visible: false;
-          }
-
-          [end]
-          Button install_button {
-            icon-name: "folder-download-symbolic";
-            tooltip-text: _("Install");
-            visible: false;
-          }
+          title-widget: Adw.ViewSwitcher view_switcher {
+            stack: content_stack;
+            policy: wide;
+          };
         }
 
         [top]
@@ -129,7 +112,8 @@ template $SitraWindow: Adw.ApplicationWindow {
 
         [bottom]
         ActionBar bottom_action_bar {
-        visible: false;
+          visible: false;
+
           [start]
           Entry preview_entry {
             placeholder-text: "Sphinx of black quartz, judge my vow.";
@@ -205,8 +189,8 @@ template $SitraWindow: Adw.ApplicationWindow {
           }
         }
 
-        content: Stack preview_stack {
-          StackPage welcome_page {
+        content: Adw.ViewStack content_stack {
+          Adw.ViewStackPage welcome_page {
             name: "welcome";
 
             child: Adw.StatusPage {
@@ -216,23 +200,129 @@ template $SitraWindow: Adw.ApplicationWindow {
             };
           }
 
-          StackPage web_page {
-            name: "preview";
-
-            child: Box web_container {
-              margin-start: 12;
-              margin-end: 12;
-              margin-top: 6;
-            };
-          }
-
-          StackPage status_page {
+          Adw.ViewStackPage status_page {
             name: "status";
 
             child: Adw.StatusPage {
               title: _("No Internet connection");
               description: _("You are not connected to the internet, font previews can't work offline.");
               icon-name: "network-offline-symbolic";
+            };
+          }
+
+          Adw.ViewStackPage preview_stack_page {
+            name: "preview";
+            title: _("Preview");
+            icon-name: "view-reveal-symbolic";
+
+            child: Box web_container {
+              margin-start: 12;
+              margin-end: 12;
+              margin-top: 6;
+              vexpand: true;
+            };
+          }
+
+          Adw.ViewStackPage details_page {
+            name: "details";
+            title: _("Details");
+            icon-name: "dialog-information-symbolic";
+
+            child: Adw.PreferencesPage {
+              Adw.PreferencesGroup {
+                Adw.ActionRow details_family_row {
+                  title: _("Font Family");
+
+                  styles [
+                    "property",
+                  ]
+                }
+
+                Adw.ActionRow details_category_row {
+                  title: _("Category");
+
+                  styles [
+                    "property",
+                  ]
+                }
+
+                Adw.ActionRow details_variable_row {
+                  title: _("Variable Font");
+
+                  styles [
+                    "property",
+                  ]
+
+                  [suffix]
+                  Image details_variable_icon {
+                    icon-name: "emblem-ok-symbolic";
+                  }
+                }
+
+                Adw.ActionRow details_license_row {
+                  title: _("License");
+
+                  [suffix]
+                  MenuButton license_button {
+                    valign: center;
+                    tooltip-text: _("License details");
+                    popover: license_popover;
+                    label: _("View License");
+
+                    styles [
+                      "flat",
+                    ]
+                  }
+                }
+              }
+
+              Adw.PreferencesGroup {
+                Adw.ExpanderRow details_subsets_row {
+                  title: _("Available Subsets");
+                }
+
+                Adw.ExpanderRow details_styles_row {
+                  title: _("Available Styles");
+                }
+              }
+
+              Adw.BreakpointBin {
+                width-request: 200;
+                height-request: 60;
+
+                Adw.Breakpoint {
+                  condition ("max-width: 400sp")
+
+                  setters {
+                    details_actions_box.orientation: vertical;
+                  }
+                }
+
+                child: Box details_actions_box {
+                  orientation: horizontal;
+                  halign: center;
+                  spacing: 12;
+                  margin-top: 24;
+                  margin-bottom: 24;
+
+                  Button details_integrate_button {
+                    label: _("Use in your app");
+
+                    styles [
+                      "pill",
+                      "suggested-action",
+                    ]
+                  }
+
+                  Button details_install_button {
+                    label: _("Download & Install");
+
+                    styles [
+                      "pill",
+                    ]
+                  }
+                };
+              }
             };
           }
         };
@@ -258,7 +348,4 @@ menu window_menu {
 Popover license_popover {
   has-arrow: true;
   name: "plain_popover";
-
 }
-
-
