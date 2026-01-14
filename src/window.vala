@@ -418,7 +418,9 @@ public class Sitra.Window : Adw.ApplicationWindow {
         if (font == null)return;
 
         details_family_row.subtitle = font.family;
-        details_category_row.subtitle = font.category;
+        var category = font.category == "sans-serif" ? "sans serif" : font.category;
+        details_category_row.subtitle = category;
+        details_category_row.add_css_class ("details-category");
 
         if (font.variable) {
             details_variable_row.subtitle = "Yes";

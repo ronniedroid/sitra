@@ -7,6 +7,7 @@
     border-radius: 9999px;
 }
 
+.details-category label.subtitle,
 .category>label {
     text-transform: capitalize;
 }
