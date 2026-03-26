@@ -1,0 +1,544 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.ronniedroid.sitra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.github.ronniedroid.sitra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-31 15:13+0300\n"
+"PO-Revision-Date: 2026-03-27 01:35+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/io.github.ronniedroid.sitra.desktop.in:2 src/application.vala:50
+msgid "sitra"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.desktop.in:3
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:8
+msgid "Get fonts from online sources"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.desktop.in:9
+msgid "Fonts;Install;"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:7 src/window.blp:5
+#: src/window.blp:27
+msgid "Sitra"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:10
+msgid ""
+"Get your fonts from online sources with a sleek, friendly user interface. "
+"Sitra provides a seamless experience for installing, uninstalling and "
+"previewing fonts."
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:15
+msgid "List fonts available on Google Fonts"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:16
+msgid "Preview the fonts using Fontsource CDN for privacy"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:17
+msgid ""
+"Get code to use the font in your project, via CDN or npm from fontsource"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:18
+msgid "Download the fonts on your device in ttf format from google"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:19
+msgid ""
+"Filter font by category using the toggle buttons or by family and subset "
+"using search"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:24
+msgid "Ronnie Nissan"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:44
+msgid "Showcasing font preview"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:48
+msgid "Showcasing font preview when a font is already installed"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:52
+msgid "Showcasing font preview with different subsets, Arabic in this case"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:56
+msgid "Showcasing Use in an Project dialog, showing npm instructions"
+msgstr ""
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:60
+msgid "Showcasing Use in an Project dialog, showing cdn instructions"
+msgstr ""
+
+#: src/application.vala:52
+msgid "Sitra helps you install fonts from online sources on your system"
+msgstr ""
+
+#: src/application.vala:58
+msgid "translator-credits"
+msgstr ""
+
+#: src/application.vala:66
+msgid "Concessio"
+msgstr ""
+
+#: src/application.vala:66
+msgid "Understand file permissions"
+msgstr ""
+
+#: src/application.vala:67
+msgid "Embellish"
+msgstr ""
+
+#: src/application.vala:67
+msgid "Install Nerd Fonts"
+msgstr ""
+
+#. These strings are extracted for translation
+#: src/data_translations.vala:6
+msgid ""
+"Fonts without decorative strokes; clean and modern, commonly used for UI and "
+"body text."
+msgstr ""
+
+#: src/data_translations.vala:7
+msgid ""
+"Decorative fonts designed for headlines and large sizes, not suitable for "
+"long text."
+msgstr ""
+
+#: src/data_translations.vala:8
+msgid ""
+"Fonts with decorative strokes at the ends of letters; traditional and often "
+"used in print."
+msgstr ""
+
+#: src/data_translations.vala:9
+msgid ""
+"Fonts that mimic handwritten or cursive styles; informal and expressive."
+msgstr ""
+
+#: src/data_translations.vala:10
+msgid ""
+"Fonts where all characters have equal width; commonly used for code and "
+"terminals."
+msgstr ""
+
+#: src/data_translations.vala:11
+msgid ""
+"Symbol-based fonts containing pictograms or UI icons instead of letters."
+msgstr ""
+
+#: src/data_translations.vala:12
+msgid ""
+"Permissive licence allowing almost unrestricted use, modification, and "
+"distribution."
+msgstr ""
+
+#: src/data_translations.vala:13
+msgid ""
+"Free to use, modify, and distribute, with conditions: no selling and "
+"original licence must be included."
+msgstr ""
+
+#: src/data_translations.vala:14
+msgid ""
+"Permissive, requires attribution, notice of changes, and inclusion of NOTICE "
+"file. Modified code can use a different licence."
+msgstr ""
+
+#: src/data_translations.vala:15
+msgid "Permissive, requires attribution and licence file."
+msgstr ""
+
+#: src/data_translations.vala:16 src/data_translations.vala:17
+msgid ""
+"Permissive license allowing unrestricted use, modification, and distribution."
+msgstr ""
+
+#: src/data_translations.vala:18
+msgid "arabic"
+msgstr ""
+
+#: src/data_translations.vala:19
+msgid "armenian"
+msgstr ""
+
+#: src/data_translations.vala:20
+msgid "bengali"
+msgstr ""
+
+#: src/data_translations.vala:21
+msgid "canadian-aboriginal"
+msgstr ""
+
+#: src/data_translations.vala:22
+msgid "cherokee"
+msgstr ""
+
+#: src/data_translations.vala:23
+msgid "cyrillic"
+msgstr ""
+
+#: src/data_translations.vala:24
+msgid "cyrillic-ext"
+msgstr ""
+
+#: src/data_translations.vala:25
+msgid "devanagari"
+msgstr ""
+
+#: src/data_translations.vala:26
+msgid "ethiopic"
+msgstr ""
+
+#: src/data_translations.vala:27
+msgid "georgian"
+msgstr ""
+
+#: src/data_translations.vala:28
+msgid "greek"
+msgstr ""
+
+#: src/data_translations.vala:29
+msgid "greek-ext"
+msgstr ""
+
+#: src/data_translations.vala:30
+msgid "gujarati"
+msgstr ""
+
+#: src/data_translations.vala:31
+msgid "gurmukhi"
+msgstr ""
+
+#: src/data_translations.vala:32
+msgid "hebrew"
+msgstr ""
+
+#: src/data_translations.vala:33
+msgid "japanese"
+msgstr ""
+
+#: src/data_translations.vala:34
+msgid "kannada"
+msgstr ""
+
+#: src/data_translations.vala:35
+msgid "khmer"
+msgstr ""
+
+#: src/data_translations.vala:36
+msgid "korean"
+msgstr ""
+
+#: src/data_translations.vala:37
+msgid "latin"
+msgstr ""
+
+#: src/data_translations.vala:38
+msgid "latin-ext"
+msgstr ""
+
+#: src/data_translations.vala:39
+msgid "malayalam"
+msgstr ""
+
+#: src/data_translations.vala:40
+msgid "myanmar"
+msgstr ""
+
+#: src/data_translations.vala:41
+msgid "oriya"
+msgstr ""
+
+#: src/data_translations.vala:42
+msgid "sinhala"
+msgstr ""
+
+#: src/data_translations.vala:43
+msgid "syriac"
+msgstr ""
+
+#: src/data_translations.vala:44
+msgid "tamil"
+msgstr ""
+
+#: src/data_translations.vala:45
+msgid "telugu"
+msgstr ""
+
+#: src/data_translations.vala:46
+msgid "thai"
+msgstr ""
+
+#: src/data_translations.vala:47
+msgid "tibetan"
+msgstr ""
+
+#: src/data_translations.vala:48
+msgid "vietnamese"
+msgstr ""
+
+#: src/data_translations.vala:49
+msgid "kayah-li"
+msgstr ""
+
+#: src/integration_dialog.blp:5
+msgid "Integration"
+msgstr ""
+
+#: src/integration_dialog.blp:24 src/integration_dialog.blp:29
+#: src/window.blp:274
+msgid "Install"
+msgstr ""
+
+#: src/integration_dialog.blp:30
+msgid "Install the font using npm or yarn"
+msgstr ""
+
+#: src/integration_dialog.blp:33 src/integration_dialog.blp:136
+msgid "Use Static Version"
+msgstr ""
+
+#: src/integration_dialog.blp:34
+msgid "Install the static version instead of variable font"
+msgstr ""
+
+#: src/integration_dialog.blp:38
+msgid "NPM"
+msgstr ""
+
+#: src/integration_dialog.blp:49 src/integration_dialog.blp:69
+#: src/integration_dialog.blp:94 src/integration_dialog.blp:115
+#: src/integration_dialog.blp:220 src/integration_dialog.blp:244
+msgid "Copy to clipboard"
+msgstr ""
+
+#: src/integration_dialog.blp:58
+msgid "Yarn"
+msgstr ""
+
+#: src/integration_dialog.blp:79
+msgid "Import"
+msgstr ""
+
+#: src/integration_dialog.blp:80
+msgid "Import into CSS"
+msgstr ""
+
+#: src/integration_dialog.blp:103 src/integration_dialog.blp:230
+msgid "Use in CSS"
+msgstr ""
+
+#: src/integration_dialog.blp:128
+msgid "CDN"
+msgstr ""
+
+#: src/integration_dialog.blp:133
+msgid "Chose from the options below"
+msgstr ""
+
+#: src/integration_dialog.blp:137
+msgid "Use the static version instead of variable font"
+msgstr ""
+
+#: src/integration_dialog.blp:141
+msgid "Subset"
+msgstr ""
+
+#: src/integration_dialog.blp:145
+msgid "Weight"
+msgstr ""
+
+#: src/integration_dialog.blp:149
+msgid "Style"
+msgstr ""
+
+#: src/integration_dialog.blp:160 src/window.vala:394
+msgid "Display"
+msgstr ""
+
+#: src/integration_dialog.blp:174
+msgid "Format"
+msgstr ""
+
+#: src/integration_dialog.blp:187
+msgid "Copy below code to your global CSS"
+msgstr ""
+
+#: src/integration_dialog.vala:321
+msgid "Copied to clipboard"
+msgstr ""
+
+#: src/shortcuts-dialog.blp:7
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: src/shortcuts-dialog.blp:10
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr ""
+
+#: src/shortcuts-dialog.blp:15
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr ""
+
+#: src/window.blp:43
+msgid "Main menu"
+msgstr ""
+
+#: src/window.blp:55
+msgid "Search fonts"
+msgstr ""
+
+#: src/window.blp:96
+msgid "Preview"
+msgstr ""
+
+#: src/window.blp:110
+msgid "Welcome to Sitra"
+msgstr ""
+
+#: src/window.blp:111
+msgid "Please select a font to preview it here"
+msgstr ""
+
+#: src/window.blp:128
+msgid "Reload"
+msgstr ""
+
+#: src/window.blp:129
+msgid "You are not connected to the internet, font preview won't work"
+msgstr ""
+
+#: src/window.blp:167
+msgid "Font Size"
+msgstr ""
+
+#: src/window.blp:182
+msgid "Line Height"
+msgstr ""
+
+#: src/window.blp:197
+msgid "Letter Spacing"
+msgstr ""
+
+#: src/window.blp:202
+msgid "Italic"
+msgstr ""
+
+#: src/window.blp:229
+msgid "Font Name"
+msgstr ""
+
+#: src/window.blp:248
+msgid "Category"
+msgstr ""
+
+#: src/window.blp:261
+msgid "License"
+msgstr ""
+
+#: src/window.blp:293
+msgid "Cancel"
+msgstr ""
+
+#: src/window.blp:314
+msgid "Uninstall"
+msgstr ""
+
+#: src/window.blp:324
+msgid "Use in a Project"
+msgstr ""
+
+#: src/window.blp:354
+msgid "No Internet connection"
+msgstr ""
+
+#: src/window.blp:355
+msgid ""
+"You are not connected to the internet, font previews can't work offline."
+msgstr ""
+
+#: src/window.blp:369
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: src/window.blp:374
+msgid "About App"
+msgstr ""
+
+#: src/window.vala:199 src/window.vala:399
+msgid "Variable"
+msgstr ""
+
+#: src/window.vala:335
+#, c-format
+msgid "Font '%s' installed successfully"
+msgstr ""
+
+#: src/window.vala:342
+#, c-format
+msgid "Failed to install '%s': %s"
+msgstr ""
+
+#: src/window.vala:350
+#, c-format
+msgid "Font '%s' uninstalled successfully"
+msgstr ""
+
+#: src/window.vala:355
+#, c-format
+msgid "Failed to uninstall '%s': %s"
+msgstr ""
+
+#: src/window.vala:392
+msgid "Sans Serif"
+msgstr ""
+
+#: src/window.vala:393
+msgid "Serif"
+msgstr ""
+
+#: src/window.vala:395
+msgid "Handwriting"
+msgstr ""
+
+#: src/window.vala:396
+msgid "Monospace"
+msgstr ""
+
+#: src/window.vala:397
+msgid "Icons"
+msgstr ""
+
+#: src/window.vala:436
+msgid "No preview available"
+msgstr ""
+
+#: src/window.vala:469
+msgid " Extended"
+msgstr ""
