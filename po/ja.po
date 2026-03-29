@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.github.ronniedroid.sitra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-31 15:13+0300\n"
-"PO-Revision-Date: 2026-03-27 01:35+0900\n"
+"PO-Revision-Date: 2026-03-29 23:49+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -20,12 +20,12 @@ msgstr ""
 
 #: data/io.github.ronniedroid.sitra.desktop.in:2 src/application.vala:50
 msgid "sitra"
-msgstr ""
+msgstr "sitra"
 
 #: data/io.github.ronniedroid.sitra.desktop.in:3
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:8
 msgid "Get fonts from online sources"
-msgstr ""
+msgstr "オンラインのソースからフォントを入手"
 
 #: data/io.github.ronniedroid.sitra.desktop.in:9
 msgid "Fonts;Install;"
@@ -34,7 +34,7 @@ msgstr ""
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:7 src/window.blp:5
 #: src/window.blp:27
 msgid "Sitra"
-msgstr ""
+msgstr "Sitra"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:10
 msgid ""
@@ -42,29 +42,36 @@ msgid ""
 "Sitra provides a seamless experience for installing, uninstalling and "
 "previewing fonts."
 msgstr ""
+"洗練された使いやすい UI を通して、フォントをオンラインのソースから入手しよ"
+"う。Sitra はフォントのインストール、アンインストール、プレビューをシームレス"
+"に行うことができます。"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:15
 msgid "List fonts available on Google Fonts"
-msgstr ""
+msgstr "Google Fonts から利用可能なフォントを一覧表示"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:16
 msgid "Preview the fonts using Fontsource CDN for privacy"
-msgstr ""
+msgstr "プライバシーの為に Fontsource CDN を使ってフォントをプレビュー"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:17
 msgid ""
 "Get code to use the font in your project, via CDN or npm from fontsource"
 msgstr ""
+"フォントを fontsource の CDN や npm 経由であなたのプロジェクトで使用するため"
+"のコードを入手"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:18
 msgid "Download the fonts on your device in ttf format from google"
-msgstr ""
+msgstr "Google から ttf 形式のフォントをデバイスにインストール"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:19
 msgid ""
 "Filter font by category using the toggle buttons or by family and subset "
 "using search"
 msgstr ""
+"フォントをカテゴリーのボタンを使って絞り込んだり、フォントファミリーや対応文"
+"字のサブセットで検索したりする"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:24
 msgid "Ronnie Nissan"
@@ -72,47 +79,49 @@ msgstr ""
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:44
 msgid "Showcasing font preview"
-msgstr ""
+msgstr "フォントのプレビュー画面"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:48
 msgid "Showcasing font preview when a font is already installed"
-msgstr ""
+msgstr "フォントが既にインストールされているときのプレビュー画面"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:52
 msgid "Showcasing font preview with different subsets, Arabic in this case"
-msgstr ""
+msgstr "違うサブセット(今回はアラビア文字)をプレビューしているときの画面"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:56
 msgid "Showcasing Use in an Project dialog, showing npm instructions"
-msgstr ""
+msgstr "npm の操作説明を表示している、プロジェクト ダイアログの画面"
 
 #: data/io.github.ronniedroid.sitra.metainfo.xml.in:60
 msgid "Showcasing Use in an Project dialog, showing cdn instructions"
-msgstr ""
+msgstr "CDN の操作説明を表示している、プロジェクト ダイアログの画面"
 
 #: src/application.vala:52
 msgid "Sitra helps you install fonts from online sources on your system"
 msgstr ""
+"Sitra を使えば'オンラインのソースからあなたのシステムにフォントを簡単にインス"
+"トールできます"
 
 #: src/application.vala:58
 msgid "translator-credits"
-msgstr ""
+msgstr "camegone, 2025"
 
 #: src/application.vala:66
 msgid "Concessio"
-msgstr ""
+msgstr "Concessio"
 
 #: src/application.vala:66
 msgid "Understand file permissions"
-msgstr ""
+msgstr "ファイル権限について学習する"
 
 #: src/application.vala:67
 msgid "Embellish"
-msgstr ""
+msgstr "Embellish"
 
 #: src/application.vala:67
 msgid "Install Nerd Fonts"
-msgstr ""
+msgstr "Nerd Fonts をインストールする"
 
 #. These strings are extracted for translation
 #: src/data_translations.vala:6
@@ -120,425 +129,440 @@ msgid ""
 "Fonts without decorative strokes; clean and modern, commonly used for UI and "
 "body text."
 msgstr ""
+"線の装飾がないフォントです。明瞭で現代的で、UI や文章の本文に使われます。"
 
 #: src/data_translations.vala:7
 msgid ""
 "Decorative fonts designed for headlines and large sizes, not suitable for "
 "long text."
 msgstr ""
+"見出しや大きな文字用にデザインされた、装飾的なフォントです。長い文章には向い"
+"ていません。"
 
 #: src/data_translations.vala:8
 msgid ""
 "Fonts with decorative strokes at the ends of letters; traditional and often "
 "used in print."
-msgstr ""
+msgstr "線の終わりに装飾があるフォントです。伝統的で、印刷物によく使われます。"
 
 #: src/data_translations.vala:9
 msgid ""
 "Fonts that mimic handwritten or cursive styles; informal and expressive."
-msgstr ""
+msgstr "手書きの文字や筆記体を模したフォントです。非形式的で表現豊かです。"
 
 #: src/data_translations.vala:10
 msgid ""
 "Fonts where all characters have equal width; commonly used for code and "
 "terminals."
 msgstr ""
+"全ての文字が同じ幅を持っているフォントです。おもにコードエディターや端末で使"
+"用されています。"
 
 #: src/data_translations.vala:11
 msgid ""
 "Symbol-based fonts containing pictograms or UI icons instead of letters."
 msgstr ""
+"記号の集まりで成り立っているフォントで、文字の代わりにピクトグラムや UI アイ"
+"コンなどが収録されています。"
 
 #: src/data_translations.vala:12
 msgid ""
 "Permissive licence allowing almost unrestricted use, modification, and "
 "distribution."
-msgstr ""
+msgstr "ほぼ無制限に使用、改変、配布が許可された、寛大なライセンスです。"
 
 #: src/data_translations.vala:13
 msgid ""
 "Free to use, modify, and distribute, with conditions: no selling and "
 "original licence must be included."
 msgstr ""
+"次の条件の下で自由に使用、改変、配布ができます: 販売の禁止と、元のライセンス"
+"を含めること。"
 
 #: src/data_translations.vala:14
 msgid ""
 "Permissive, requires attribution, notice of changes, and inclusion of NOTICE "
 "file. Modified code can use a different licence."
 msgstr ""
+"寛大なライセンスですが、版元の引用と、変更箇所の通知、NOTICE ファイルの同梱が"
+"必要です。コードの変更箇所には別のライセンスを使用することができます。"
 
 #: src/data_translations.vala:15
 msgid "Permissive, requires attribution and licence file."
-msgstr ""
+msgstr "寛大なライセンスですが、版元の引用とライセンス ファイルが必要です。"
 
 #: src/data_translations.vala:16 src/data_translations.vala:17
 msgid ""
 "Permissive license allowing unrestricted use, modification, and distribution."
-msgstr ""
+msgstr "無制限に使用、改変、配布が許可された、寛大なライセンスです。"
 
 #: src/data_translations.vala:18
 msgid "arabic"
-msgstr ""
+msgstr "アラビア文字"
 
 #: src/data_translations.vala:19
 msgid "armenian"
-msgstr ""
+msgstr "アルメニア文字"
 
 #: src/data_translations.vala:20
 msgid "bengali"
-msgstr ""
+msgstr "ベンガル文字"
 
 #: src/data_translations.vala:21
 msgid "canadian-aboriginal"
-msgstr ""
+msgstr "カナダ先住民文字"
 
 #: src/data_translations.vala:22
 msgid "cherokee"
-msgstr ""
+msgstr "チェロキー文字"
 
 #: src/data_translations.vala:23
 msgid "cyrillic"
-msgstr ""
+msgstr "キリル文字"
 
 #: src/data_translations.vala:24
 msgid "cyrillic-ext"
-msgstr ""
+msgstr "キリル文字(拡張)"
 
 #: src/data_translations.vala:25
 msgid "devanagari"
-msgstr ""
+msgstr "デーヴァナーガリー"
 
 #: src/data_translations.vala:26
 msgid "ethiopic"
-msgstr ""
+msgstr "エチオピア文字"
 
 #: src/data_translations.vala:27
 msgid "georgian"
-msgstr ""
+msgstr "ジョージア文字"
 
 #: src/data_translations.vala:28
 msgid "greek"
-msgstr ""
+msgstr "ギリシア文字"
 
 #: src/data_translations.vala:29
 msgid "greek-ext"
-msgstr ""
+msgstr "ギリシア文字(拡張)"
 
 #: src/data_translations.vala:30
 msgid "gujarati"
-msgstr ""
+msgstr "グジャラーティー文字"
 
 #: src/data_translations.vala:31
 msgid "gurmukhi"
-msgstr ""
+msgstr "グルムキー文字"
 
 #: src/data_translations.vala:32
 msgid "hebrew"
-msgstr ""
+msgstr "ヘブライ文字"
 
 #: src/data_translations.vala:33
 msgid "japanese"
-msgstr ""
+msgstr "日本語"
 
 #: src/data_translations.vala:34
 msgid "kannada"
-msgstr ""
+msgstr "カンナダ文字"
 
 #: src/data_translations.vala:35
 msgid "khmer"
-msgstr ""
+msgstr "クメール文字"
 
 #: src/data_translations.vala:36
 msgid "korean"
-msgstr ""
+msgstr "韓国語"
 
 #: src/data_translations.vala:37
 msgid "latin"
-msgstr ""
+msgstr "ラテン文字"
 
 #: src/data_translations.vala:38
 msgid "latin-ext"
-msgstr ""
+msgstr "ラテン文字(拡張)"
 
 #: src/data_translations.vala:39
 msgid "malayalam"
-msgstr ""
+msgstr "マラヤーラム文字"
 
 #: src/data_translations.vala:40
 msgid "myanmar"
-msgstr ""
+msgstr "ミャンマー文字"
 
 #: src/data_translations.vala:41
 msgid "oriya"
-msgstr ""
+msgstr "オリヤー文字"
 
 #: src/data_translations.vala:42
 msgid "sinhala"
-msgstr ""
+msgstr "シンハラ文字"
 
 #: src/data_translations.vala:43
 msgid "syriac"
-msgstr ""
+msgstr "シリア文字"
 
 #: src/data_translations.vala:44
 msgid "tamil"
-msgstr ""
+msgstr "タミル文字"
 
 #: src/data_translations.vala:45
 msgid "telugu"
-msgstr ""
+msgstr "テルグ文字"
 
 #: src/data_translations.vala:46
 msgid "thai"
-msgstr ""
+msgstr "タイ文字"
 
 #: src/data_translations.vala:47
 msgid "tibetan"
-msgstr ""
+msgstr "チベット文字"
 
 #: src/data_translations.vala:48
 msgid "vietnamese"
-msgstr ""
+msgstr "ベトナム文字"
 
 #: src/data_translations.vala:49
 msgid "kayah-li"
-msgstr ""
+msgstr "カヤー・リー文字"
 
 #: src/integration_dialog.blp:5
 msgid "Integration"
-msgstr ""
+msgstr "統合"
 
 #: src/integration_dialog.blp:24 src/integration_dialog.blp:29
 #: src/window.blp:274
 msgid "Install"
-msgstr ""
+msgstr "インストール"
 
 #: src/integration_dialog.blp:30
 msgid "Install the font using npm or yarn"
-msgstr ""
+msgstr "npm か yarn を使用してインストールする"
 
 #: src/integration_dialog.blp:33 src/integration_dialog.blp:136
 msgid "Use Static Version"
-msgstr ""
+msgstr "静的バージョンを使用"
 
 #: src/integration_dialog.blp:34
 msgid "Install the static version instead of variable font"
-msgstr ""
+msgstr "可変フォントの代わりに静的なバージョンをインストールする"
 
 #: src/integration_dialog.blp:38
 msgid "NPM"
-msgstr ""
+msgstr "NPM"
 
 #: src/integration_dialog.blp:49 src/integration_dialog.blp:69
 #: src/integration_dialog.blp:94 src/integration_dialog.blp:115
 #: src/integration_dialog.blp:220 src/integration_dialog.blp:244
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "クリップボードにコピー"
 
 #: src/integration_dialog.blp:58
 msgid "Yarn"
-msgstr ""
+msgstr "Yarn"
 
 #: src/integration_dialog.blp:79
 msgid "Import"
-msgstr ""
+msgstr "インポート"
 
 #: src/integration_dialog.blp:80
 msgid "Import into CSS"
-msgstr ""
+msgstr "CSS にインポートする"
 
 #: src/integration_dialog.blp:103 src/integration_dialog.blp:230
 msgid "Use in CSS"
-msgstr ""
+msgstr "CSS での使用方法"
 
 #: src/integration_dialog.blp:128
 msgid "CDN"
-msgstr ""
+msgstr "CDN"
 
 #: src/integration_dialog.blp:133
 msgid "Chose from the options below"
-msgstr ""
+msgstr "以下の選択肢を選んでください"
 
 #: src/integration_dialog.blp:137
 msgid "Use the static version instead of variable font"
-msgstr ""
+msgstr "可変フォントの代わりに静的なバージョンを使用する"
 
 #: src/integration_dialog.blp:141
 msgid "Subset"
-msgstr ""
+msgstr "サブセット"
 
 #: src/integration_dialog.blp:145
 msgid "Weight"
-msgstr ""
+msgstr "ウェイト"
 
 #: src/integration_dialog.blp:149
 msgid "Style"
-msgstr ""
+msgstr "スタイル"
 
 #: src/integration_dialog.blp:160 src/window.vala:394
 msgid "Display"
-msgstr ""
+msgstr "遅延表示方法"
 
 #: src/integration_dialog.blp:174
 msgid "Format"
-msgstr ""
+msgstr "形式"
 
 #: src/integration_dialog.blp:187
 msgid "Copy below code to your global CSS"
-msgstr ""
+msgstr "下のコードをグローバルな CSS に貼り付けてください"
 
 #: src/integration_dialog.vala:321
 msgid "Copied to clipboard"
-msgstr ""
+msgstr "クリップボードにコピーしました"
 
 #: src/shortcuts-dialog.blp:7
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: src/shortcuts-dialog.blp:10
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "ショートカットの表示"
 
 #: src/shortcuts-dialog.blp:15
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "アプリを終了"
 
 #: src/window.blp:43
 msgid "Main menu"
-msgstr ""
+msgstr "メインメニュー"
 
 #: src/window.blp:55
 msgid "Search fonts"
-msgstr ""
+msgstr "フォントを検索"
 
 #: src/window.blp:96
 msgid "Preview"
-msgstr ""
+msgstr "プレビュー"
 
 #: src/window.blp:110
 msgid "Welcome to Sitra"
-msgstr ""
+msgstr "Sitra へようこそ"
 
 #: src/window.blp:111
 msgid "Please select a font to preview it here"
-msgstr ""
+msgstr "ここでプレビューしたいフォントを左から選択してください"
 
 #: src/window.blp:128
 msgid "Reload"
-msgstr ""
+msgstr "再読み込み"
 
 #: src/window.blp:129
 msgid "You are not connected to the internet, font preview won't work"
 msgstr ""
+"今インターネットに接続されていません。フォントのプレビューはオフラインで動作"
+"しません"
 
 #: src/window.blp:167
 msgid "Font Size"
-msgstr ""
+msgstr "フォントのサイズ"
 
 #: src/window.blp:182
 msgid "Line Height"
-msgstr ""
+msgstr "行の高さの高さ"
 
 #: src/window.blp:197
 msgid "Letter Spacing"
-msgstr ""
+msgstr "文字の幅"
 
 #: src/window.blp:202
 msgid "Italic"
-msgstr ""
+msgstr "斜体"
 
 #: src/window.blp:229
 msgid "Font Name"
-msgstr ""
+msgstr "フォント名"
 
 #: src/window.blp:248
 msgid "Category"
-msgstr ""
+msgstr "カテゴリー"
 
 #: src/window.blp:261
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 #: src/window.blp:293
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: src/window.blp:314
 msgid "Uninstall"
-msgstr ""
+msgstr "アンインストール"
 
 #: src/window.blp:324
 msgid "Use in a Project"
-msgstr ""
+msgstr "プロジェクトで使用"
 
 #: src/window.blp:354
 msgid "No Internet connection"
-msgstr ""
+msgstr "インターネット接続なし"
 
 #: src/window.blp:355
 msgid ""
 "You are not connected to the internet, font previews can't work offline."
 msgstr ""
+"今インターネットに接続されていません。フォントのプレビューはオフラインで動作"
+"しません。"
 
 #: src/window.blp:369
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "キーボードショートカット一覧"
 
 #: src/window.blp:374
 msgid "About App"
-msgstr ""
+msgstr "このアプリについて"
 
 #: src/window.vala:199 src/window.vala:399
 msgid "Variable"
-msgstr ""
+msgstr "可変"
 
 #: src/window.vala:335
 #, c-format
 msgid "Font '%s' installed successfully"
-msgstr ""
+msgstr "フォント 「%s」のインストールを完了しました"
 
 #: src/window.vala:342
 #, c-format
 msgid "Failed to install '%s': %s"
-msgstr ""
+msgstr "「%s」のインストールに失敗しました。理由: %s"
 
 #: src/window.vala:350
 #, c-format
 msgid "Font '%s' uninstalled successfully"
-msgstr ""
+msgstr "フォント 「%s」のアンインストールを完了しました"
 
 #: src/window.vala:355
 #, c-format
 msgid "Failed to uninstall '%s': %s"
-msgstr ""
+msgstr "「%s」のアンインストールに失敗しました。理由: %s"
 
 #: src/window.vala:392
 msgid "Sans Serif"
-msgstr ""
+msgstr "サンセリフ"
 
 #: src/window.vala:393
 msgid "Serif"
-msgstr ""
+msgstr "セリフ"
 
 #: src/window.vala:395
 msgid "Handwriting"
-msgstr ""
+msgstr "手書き"
 
 #: src/window.vala:396
 msgid "Monospace"
-msgstr ""
+msgstr "固定幅"
 
 #: src/window.vala:397
 msgid "Icons"
-msgstr ""
+msgstr "アイコン"
 
 #: src/window.vala:436
 msgid "No preview available"
-msgstr ""
+msgstr "プレビューは利用できません"
 
 #: src/window.vala:469
 msgid " Extended"
-msgstr ""
+msgstr " 拡張"
