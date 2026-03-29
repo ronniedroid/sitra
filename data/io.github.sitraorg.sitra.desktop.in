@@ -1,11 +1,13 @@
 [Desktop Entry]
 Name=sitra
 Comment=Get fonts from online sources
+Comment[hr]=Preuzimanje fontova s internetskih izvora
 Exec=io.github.sitraorg.sitra
 Icon=io.github.sitraorg.sitra
 Terminal=false
 Type=Application
 Categories=GNOME;GTK;TextTools;Utility;
 Keywords=Fonts;Install;
+Keywords[hr]=font;fontovi;instaliraj;
 StartupNotify=true
 DBusActivatable=true

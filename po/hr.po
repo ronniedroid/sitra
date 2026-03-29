@@ -1,0 +1,611 @@
+# Croatian translations for io.github.ronniedroid.sitra package.
+# Copyright (C) 2026 THE io.github.ronniedroid.sitra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.ronniedroid.sitra package.
+# Milo Ivir <mail@milotype.de>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.github.ronniedroid.sitra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-31 15:13+0300\n"
+"PO-Revision-Date: 2026-03-21 16:06+0100\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
+"Language-Team: \n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.9\n"
+
+#: data/io.github.ronniedroid.sitra.desktop.in:2 src/application.vala:50
+msgid "sitra"
+msgstr "sitra"
+
+#: data/io.github.ronniedroid.sitra.desktop.in:3
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:8
+msgid "Get fonts from online sources"
+msgstr "Preuzimanje fontova s internetskih izvora"
+
+#: data/io.github.ronniedroid.sitra.desktop.in:9
+msgid "Fonts;Install;"
+msgstr "Fontovi;Instaliraj;"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:7 src/window.blp:5
+#: src/window.blp:27
+msgid "Sitra"
+msgstr "Sitra"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:10
+msgid ""
+"Get your fonts from online sources with a sleek, friendly user interface. "
+"Sitra provides a seamless experience for installing, uninstalling and "
+"previewing fonts."
+msgstr ""
+"Preuzmite fontove s internetskih izvora uz elegantno i prijateljsko "
+"korisničko sučelje. Sitra pruža besprijekorno iskustvo instalacije, "
+"deinstalacije i pregleda fontova."
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:15
+msgid "List fonts available on Google Fonts"
+msgstr "Prikaz popisa fontova koji su dostupni na Google Fonts"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:16
+msgid "Preview the fonts using Fontsource CDN for privacy"
+msgstr "Pregled fontova koristeći Fontsource CDN za privatnost"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:17
+msgid ""
+"Get code to use the font in your project, via CDN or npm from fontsource"
+msgstr ""
+"Preuzimanje koda za korištenje fonta u svom projektu, putem CDN-a ili NPM-a "
+"iz fontsource-a"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:18
+msgid "Download the fonts on your device in ttf format from google"
+msgstr "Preuzimanje fontova na svoj uređaj u ttf formatu s Googlea"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:19
+msgid ""
+"Filter font by category using the toggle buttons or by family and subset "
+"using search"
+msgstr ""
+"Filtriranje fonta po kategoriji pomoću tipki za uključivanje/isključivanje "
+"ili po obitelji i podskupu koristeći pretragu"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:24
+msgid "Ronnie Nissan"
+msgstr "Ronnie Nissan"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:44
+msgid "Showcasing font preview"
+msgstr "Prikaz pregleda fonta"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:48
+msgid "Showcasing font preview when a font is already installed"
+msgstr "Prikaz pregleda fonta kada je font već instaliran"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:52
+msgid "Showcasing font preview with different subsets, Arabic in this case"
+msgstr ""
+"Prikaz pregleda fonta s različitim podskupovima, u ovom slučaju arapski"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:56
+msgid "Showcasing Use in an Project dialog, showing npm instructions"
+msgstr "Prikaz dijaloga „Koristi u projektu“, prikazuju se npm upute"
+
+#: data/io.github.ronniedroid.sitra.metainfo.xml.in:60
+msgid "Showcasing Use in an Project dialog, showing cdn instructions"
+msgstr "Prikaz dijaloga „Koristi u projektu“, prikazuju se cdn upute"
+
+#: src/application.vala:52
+msgid "Sitra helps you install fonts from online sources on your system"
+msgstr "Sitra pomaže instalirati fontove s online izvora na vaš sustav"
+
+#: src/application.vala:58
+msgid "translator-credits"
+msgstr "Milo Ivir <mail@milotype.de>, 2026"
+
+#: src/application.vala:66
+msgid "Concessio"
+msgstr "Concessio"
+
+#: src/application.vala:66
+msgid "Understand file permissions"
+msgstr "Razumij dozvole za datoteke"
+
+#: src/application.vala:67
+msgid "Embellish"
+msgstr "Embellish"
+
+#: src/application.vala:67
+msgid "Install Nerd Fonts"
+msgstr "Instaliraj Nerd fontove"
+
+#. These strings are extracted for translation
+#: src/data_translations.vala:6
+msgid ""
+"Fonts without decorative strokes; clean and modern, commonly used for UI and "
+"body text."
+msgstr ""
+"Fontovi bez ukrasnih poteza; čist i moderan, često korišten za korisničko "
+"sučelje i tekst sadržaja."
+
+#: src/data_translations.vala:7
+msgid ""
+"Decorative fonts designed for headlines and large sizes, not suitable for "
+"long text."
+msgstr ""
+"Dekorativni fontovi namijenjeni naslovima i velikim veličinama. Nisu "
+"prikladni za dugačak tekst."
+
+#: src/data_translations.vala:8
+msgid ""
+"Fonts with decorative strokes at the ends of letters; traditional and often "
+"used in print."
+msgstr ""
+"Fontovi s ukrasnim potezima na krajevima slova; tradicionalno i često "
+"korišteno u tisku."
+
+#: src/data_translations.vala:9
+msgid ""
+"Fonts that mimic handwritten or cursive styles; informal and expressive."
+msgstr ""
+"Fontovi koji oponašaju rukopisne ili kurzivne stilove; neformalno i "
+"izražajno."
+
+#: src/data_translations.vala:10
+msgid ""
+"Fonts where all characters have equal width; commonly used for code and "
+"terminals."
+msgstr ""
+"Fontovi u kojima su svi znakovi jednake širine; Često se koristi za "
+"programski kod i terminale."
+
+#: src/data_translations.vala:11
+msgid ""
+"Symbol-based fonts containing pictograms or UI icons instead of letters."
+msgstr ""
+"Fontovi temeljeni na simbolima koji sadrže piktograme ili ikone za "
+"korisničko sučelje umjesto slova."
+
+#: src/data_translations.vala:12
+msgid ""
+"Permissive licence allowing almost unrestricted use, modification, and "
+"distribution."
+msgstr ""
+"Permisivna licenca dopušta gotovo neograničenu upotrebu, mijenjanje i "
+"distribuciju."
+
+#: src/data_translations.vala:13
+msgid ""
+"Free to use, modify, and distribute, with conditions: no selling and "
+"original licence must be included."
+msgstr ""
+"Slobodno korištenje, mijenjanje i distribucija, uz uvjete: ne smije se "
+"prodavati i originalna licenca se mora uključiti."
+
+#: src/data_translations.vala:14
+msgid ""
+"Permissive, requires attribution, notice of changes, and inclusion of NOTICE "
+"file. Modified code can use a different licence."
+msgstr ""
+"Permisivno, zahtijeva navođenje izvora, obavijest o promjenama i "
+"uključivanje datoteke OBAVIJESTI. Promijenjeni kod može koristiti jednu "
+"drugu licencu."
+
+#: src/data_translations.vala:15
+msgid "Permissive, requires attribution and licence file."
+msgstr "Permisivno, zahtijeva navođenje izvora i datoteku licence."
+
+#: src/data_translations.vala:16 src/data_translations.vala:17
+msgid ""
+"Permissive license allowing unrestricted use, modification, and distribution."
+msgstr ""
+"Permisivna licenca koja dopušta neograničenu upotrebu, mijenjanje i "
+"distribuciju."
+
+#: src/data_translations.vala:18
+msgid "arabic"
+msgstr "arapski"
+
+#: src/data_translations.vala:19
+msgid "armenian"
+msgstr "armenski"
+
+#: src/data_translations.vala:20
+msgid "bengali"
+msgstr "bengalski"
+
+#: src/data_translations.vala:21
+msgid "canadian-aboriginal"
+msgstr "kanadsko starosjedilačko"
+
+#: src/data_translations.vala:22
+msgid "cherokee"
+msgstr "čerokijski"
+
+#: src/data_translations.vala:23
+msgid "cyrillic"
+msgstr "ćirilica"
+
+#: src/data_translations.vala:24
+msgid "cyrillic-ext"
+msgstr "ćirilica prošireno"
+
+#: src/data_translations.vala:25
+msgid "devanagari"
+msgstr "devanagari"
+
+#: src/data_translations.vala:26
+msgid "ethiopic"
+msgstr "etiopski"
+
+#: src/data_translations.vala:27
+msgid "georgian"
+msgstr "gruzijski"
+
+#: src/data_translations.vala:28
+msgid "greek"
+msgstr "grčki"
+
+#: src/data_translations.vala:29
+msgid "greek-ext"
+msgstr "grčki prošireno"
+
+#: src/data_translations.vala:30
+msgid "gujarati"
+msgstr "gujarati"
+
+#: src/data_translations.vala:31
+msgid "gurmukhi"
+msgstr "gurmukhi"
+
+#: src/data_translations.vala:32
+msgid "hebrew"
+msgstr "hebrejski"
+
+#: src/data_translations.vala:33
+msgid "japanese"
+msgstr "japanski"
+
+#: src/data_translations.vala:34
+msgid "kannada"
+msgstr "kannada"
+
+#: src/data_translations.vala:35
+msgid "khmer"
+msgstr "kmerski"
+
+#: src/data_translations.vala:36
+msgid "korean"
+msgstr "korejski"
+
+#: src/data_translations.vala:37
+msgid "latin"
+msgstr "latinica"
+
+#: src/data_translations.vala:38
+msgid "latin-ext"
+msgstr "latinica prošireno"
+
+#: src/data_translations.vala:39
+msgid "malayalam"
+msgstr "malajalam"
+
+#: src/data_translations.vala:40
+msgid "myanmar"
+msgstr "mjanmar"
+
+#: src/data_translations.vala:41
+msgid "oriya"
+msgstr "oriya"
+
+#: src/data_translations.vala:42
+msgid "sinhala"
+msgstr "sinhalski"
+
+#: src/data_translations.vala:43
+msgid "syriac"
+msgstr "sirijski"
+
+#: src/data_translations.vala:44
+msgid "tamil"
+msgstr "tamilski"
+
+#: src/data_translations.vala:45
+msgid "telugu"
+msgstr "telugu"
+
+#: src/data_translations.vala:46
+msgid "thai"
+msgstr "tajlandski"
+
+#: src/data_translations.vala:47
+msgid "tibetan"
+msgstr "tibetski"
+
+#: src/data_translations.vala:48
+msgid "vietnamese"
+msgstr "vijetnamski"
+
+#: src/data_translations.vala:49
+msgid "kayah-li"
+msgstr "kayah-li"
+
+#: src/integration_dialog.blp:5
+msgid "Integration"
+msgstr "Integracija"
+
+#: src/integration_dialog.blp:24 src/integration_dialog.blp:29
+#: src/window.blp:274
+msgid "Install"
+msgstr "Instaliraj"
+
+#: src/integration_dialog.blp:30
+msgid "Install the font using npm or yarn"
+msgstr "Instaliraj font koristeći npm ili yarn"
+
+#: src/integration_dialog.blp:33 src/integration_dialog.blp:136
+msgid "Use Static Version"
+msgstr "Koristi statičku verziju"
+
+#: src/integration_dialog.blp:34
+msgid "Install the static version instead of variable font"
+msgstr "Instaliraj statičnu verziju umjesto varijabilnog fonta"
+
+#: src/integration_dialog.blp:38
+msgid "NPM"
+msgstr "NPM"
+
+#: src/integration_dialog.blp:49 src/integration_dialog.blp:69
+#: src/integration_dialog.blp:94 src/integration_dialog.blp:115
+#: src/integration_dialog.blp:220 src/integration_dialog.blp:244
+msgid "Copy to clipboard"
+msgstr "Kopiraj u međuspremnik"
+
+#: src/integration_dialog.blp:58
+msgid "Yarn"
+msgstr "Yarn"
+
+#: src/integration_dialog.blp:79
+msgid "Import"
+msgstr "Uvezi"
+
+#: src/integration_dialog.blp:80
+msgid "Import into CSS"
+msgstr "Uvezi u CSS"
+
+#: src/integration_dialog.blp:103 src/integration_dialog.blp:230
+msgid "Use in CSS"
+msgstr "Koristi u CSS-u"
+
+#: src/integration_dialog.blp:128
+msgid "CDN"
+msgstr "CDN"
+
+#: src/integration_dialog.blp:133
+msgid "Chose from the options below"
+msgstr "Odaberite jednu od opcija u nastavku"
+
+#: src/integration_dialog.blp:137
+msgid "Use the static version instead of variable font"
+msgstr "Instaliraj statičnu verziju umjesto varijabilnog fonta"
+
+#: src/integration_dialog.blp:141
+msgid "Subset"
+msgstr "Podskup"
+
+#: src/integration_dialog.blp:145
+msgid "Weight"
+msgstr "Debljina"
+
+#: src/integration_dialog.blp:149
+msgid "Style"
+msgstr "Stil"
+
+#: src/integration_dialog.blp:160 src/window.vala:394
+#, fuzzy
+msgid "Display"
+msgstr "Ekran"
+
+#: src/integration_dialog.blp:174
+msgid "Format"
+msgstr "Format"
+
+#: src/integration_dialog.blp:187
+msgid "Copy below code to your global CSS"
+msgstr "Kopirajte donji kod u svoj globalni CSS"
+
+#: src/integration_dialog.vala:321
+msgid "Copied to clipboard"
+msgstr "Kopirano u međuspremnik"
+
+#: src/shortcuts-dialog.blp:7
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Opće"
+
+#: src/shortcuts-dialog.blp:10
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Prikaži prečace"
+
+#: src/shortcuts-dialog.blp:15
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Zatvori aplikaciju"
+
+#: src/window.blp:43
+msgid "Main menu"
+msgstr "Glavni izbornik"
+
+#: src/window.blp:55
+msgid "Search fonts"
+msgstr "Traži fontove"
+
+#: src/window.blp:96
+msgid "Preview"
+msgstr "Pregled"
+
+#: src/window.blp:110
+msgid "Welcome to Sitra"
+msgstr "Dobro došli u Sitra"
+
+#: src/window.blp:111
+msgid "Please select a font to preview it here"
+msgstr "Odaberite font za pregled ovdje"
+
+#: src/window.blp:128
+msgid "Reload"
+msgstr "Učitaj ponovo"
+
+#: src/window.blp:129
+msgid "You are not connected to the internet, font preview won't work"
+msgstr "Niste povezan na internet, pregled fonta neće raditi"
+
+#: src/window.blp:167
+msgid "Font Size"
+msgstr "Veličina fonta"
+
+#: src/window.blp:182
+msgid "Line Height"
+msgstr "Visina retka"
+
+#: src/window.blp:197
+msgid "Letter Spacing"
+msgstr "Razmak između slova"
+
+#: src/window.blp:202
+msgid "Italic"
+msgstr "Kurziv"
+
+#: src/window.blp:229
+msgid "Font Name"
+msgstr "Ime fonta"
+
+#: src/window.blp:248
+msgid "Category"
+msgstr "Kategorija"
+
+#: src/window.blp:261
+msgid "License"
+msgstr "Licenca"
+
+#: src/window.blp:293
+msgid "Cancel"
+msgstr "Odustani"
+
+#: src/window.blp:314
+msgid "Uninstall"
+msgstr "Deinstaliraj"
+
+#: src/window.blp:324
+msgid "Use in a Project"
+msgstr "Koristi u projektu"
+
+#: src/window.blp:354
+msgid "No Internet connection"
+msgstr "Nema internetske veze"
+
+#: src/window.blp:355
+msgid ""
+"You are not connected to the internet, font previews can't work offline."
+msgstr "Niste povezani na internet, pregledi fontova ne mogu raditi offline."
+
+#: src/window.blp:369
+msgid "Keyboard Shortcuts"
+msgstr "Tipkovni prečaci"
+
+#: src/window.blp:374
+msgid "About App"
+msgstr "O aplikaciji"
+
+#: src/window.vala:199 src/window.vala:399
+msgid "Variable"
+msgstr "Varijabla"
+
+#: src/window.vala:335
+#, c-format
+msgid "Font '%s' installed successfully"
+msgstr "Font „%s“ je uspješno instaliran"
+
+#: src/window.vala:342
+#, c-format
+msgid "Failed to install '%s': %s"
+msgstr "Neuspjelo instaliranje fonta „%s“: %s"
+
+#: src/window.vala:350
+#, c-format
+msgid "Font '%s' uninstalled successfully"
+msgstr "Font „%s“ je uspješno deinstaliran"
+
+#: src/window.vala:355
+#, c-format
+msgid "Failed to uninstall '%s': %s"
+msgstr "Neuspjelo deinstaliranje fonta „%s“: %s"
+
+#: src/window.vala:392
+msgid "Sans Serif"
+msgstr "Bezserifni"
+
+#: src/window.vala:393
+msgid "Serif"
+msgstr "Serifni"
+
+#: src/window.vala:395
+msgid "Handwriting"
+msgstr "Rukopisni"
+
+#: src/window.vala:396
+msgid "Monospace"
+msgstr "Fiksne širine"
+
+#: src/window.vala:397
+msgid "Icons"
+msgstr "Ikone"
+
+#: src/window.vala:436
+msgid "No preview available"
+msgstr "Nema dostupnog pregleda"
+
+#: src/window.vala:469
+msgid " Extended"
+msgstr " Prošireno"
+
+#~ msgid ""
+#~ "Fonts that do not fit standard categories or are highly experimental or "
+#~ "mixed-style."
+#~ msgstr ""
+#~ "خطوط لا تندرج تحت فئات قياسية أو هي خطوط تجريبية أو ذات أنماط مختلطة."
+
+#~ msgid "No description available"
+#~ msgstr "لا يوجد وصف متاح"
+
+#, c-format
+#~ msgid "Font '%s' is already installed"
+#~ msgstr "الخط '%s' مثبت بالفعل"
+
+#~ msgid "Installation cancelled"
+#~ msgstr "تم إلغاء التثبيت"
+
+#, c-format
+#~ msgid "Font '%s' is not installed"
+#~ msgstr "الخط '%s' غير مثبت"
+
+#, c-format
+#~ msgid "Failed to save installed fonts database after uninstallation: %s"
+#~ msgstr "فشل حفظ قاعدة بيانات الخطوط المثبتة بعد إلغاء التثبيت: %s"
+
+#, c-format
+#~ msgid "Failed to download font file: HTTP %u"
+#~ msgstr "فشل تنزيل ملف الخط: HTTP %u"
+
+#, c-format
+#~ msgid "Failed to download font file: %s"
+#~ msgstr "فشل تنزيل ملف الخط: %s"
+
+#, c-format
+#~ msgid "Failed to save installed fonts database: %s"
+#~ msgstr "فشل حفظ قاعدة بيانات الخطوط المثبتة: %s"
