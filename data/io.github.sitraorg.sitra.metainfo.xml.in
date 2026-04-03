@@ -29,7 +29,7 @@
   <url type="bugtracker">https://github.com/sitraorg/sitra/issues/new</url>
   <url type="contact">https://ronnienissan.pages.dev/</url>
 
-  <translation type="gettext">sitra</translation>
+  <translation type="gettext">io.github.sitraorg.sitra</translation>
   <launchable type="desktop-id">io.github.sitraorg.sitra.desktop</launchable>
   <content_rating type="oars-1.1" />
 

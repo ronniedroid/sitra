@@ -151,7 +151,7 @@ public class Sitra.Managers.PreviewManager : Object {
     }
 
     private string get_font_url (Libsitra.Font font, string subset, int? weight = null, bool italic = false) {
-        string font_slug = font.family.down().replace(" ", "-");
+        string font_slug = font.family.ascii_down().replace(" ", "-");
         if (font.variable) {
             return "https://cdn.jsdelivr.net/fontsource/fonts/%s:vf@latest/%s-wght-normal.woff2".printf(font_slug, subset);
         } else {

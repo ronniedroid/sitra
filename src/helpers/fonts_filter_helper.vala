@@ -38,7 +38,7 @@ public class Sitra.Helpers.FontsFilterHelper : Object {
     }
 
     private bool match_item (Object? item) {
-        string query = search_entry ? .text ? .strip () ? .down () ?? "";
+        string query = search_entry ? .text ? .strip () ? .ascii_down () ?? "";
         var font = item as Libsitra.Font;
         if (font == null) {
             warning ("Font '%s' not found in map", font.family);
@@ -69,11 +69,11 @@ public class Sitra.Helpers.FontsFilterHelper : Object {
 
             bool found = false;
 
-            if (font.family.down ().contains (term)) {
+            if (font.family.ascii_down ().contains (term)) {
                 found = true;
             } else {
                 foreach (var subset in font.subsets) {
-                    if (subset.down ().contains (term)) {
+                    if (subset.ascii_down ().contains (term)) {
                         found = true;
                         break;
                     }

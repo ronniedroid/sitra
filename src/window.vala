@@ -412,7 +412,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
     }
 
     private bool is_any_default_text (string text) {
-        if (text == preview_manager.DEFAULT_PREVIEW_TEXT || text == preview_manager.DEFAULT_ICON_PREVIEW) {
+        if (text == "" || text == preview_manager.DEFAULT_PREVIEW_TEXT || text == preview_manager.DEFAULT_ICON_PREVIEW) {
             return true;
         }
 
@@ -497,7 +497,11 @@ public class Sitra.Window : Adw.ApplicationWindow {
             } else {
                 label = GLib.dgettext (Config.GETTEXT_PACKAGE, subset);
             }
-            label = label[0].to_string ().up () + label.substring (1);
+            int next_index = 0;
+            unichar first_char;
+            if (label.get_next_char (ref next_index, out first_char)) {
+                label = first_char.toupper ().to_string () + label.substring (next_index);
+            }
 
             var button = new Gtk.ToggleButton.with_label (label);
             button.add_css_class ("category");
@@ -508,10 +512,11 @@ public class Sitra.Window : Adw.ApplicationWindow {
                 button.set_group (group_button);
             }
 
+            string current_subset = subset;
             button.toggled.connect (() => {
                 if (button.active) {
                     try {
-                        string text = preview_texts.get_string ("preview_text", subset);
+                        string text = preview_texts.get_string ("preview_text", current_subset);
                         if (preview_entry.get_text () != text && is_any_default_text (preview_entry.get_text ())) {
                             preview_entry.set_text (text);
                         }
@@ -530,7 +535,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
             Gtk.Widget? iter = subsets_box.get_first_child ();
             while (iter != null) {
                 var tb = iter as Gtk.ToggleButton;
-                if (tb != null && tb.get_label ().down () == "latin") {
+                if (tb != null && tb.get_label ().ascii_down () == "latin") {
                     latin_button = tb;
                     break;
                 }
@@ -641,3 +646,4 @@ public class Sitra.Window : Adw.ApplicationWindow {
         }
     }
 }
+

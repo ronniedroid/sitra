@@ -12,15 +12,14 @@ srcdir = meson.project_source_root() / 'src'
 
 config_h = configuration_data()
 config_h.set_quoted('PACKAGE_VERSION', meson.project_version ())
-config_h.set_quoted('GETTEXT_PACKAGE', 'io.github.ronniedroid.sitra')
+config_h.set_quoted('GETTEXT_PACKAGE', 'io.github.sitraorg.sitra')
 config_h.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
 configure_file(output: 'config.h', configuration: config_h)
 
 config_dep = valac.find_library ('config', dirs: srcdir)
 config_inc = include_directories('.')
 
-add_project_arguments('-DGETTEXT_PACKAGE="' + meson.project_name () + '"', language: 'c')
-
+add_project_arguments('-DGETTEXT_PACKAGE="io.github.sitraorg.sitra"', language: 'c')
 sitra_sources = files()
 subdir('data')
 subdir('src')

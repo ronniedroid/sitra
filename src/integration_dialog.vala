@@ -66,7 +66,7 @@ public class Sitra.IntegrationDialog : Adw.Dialog {
 
     public void populate (Libsitra.Font font) {
         current_font = font;
-        current_package_name = font.family.down ().replace (" ", "-");
+        current_package_name = font.family.ascii_down ().replace (" ", "-");
 
         install_static_switch_row.visible = font.variable;
         cdn_static_switch_row.visible = font.variable;

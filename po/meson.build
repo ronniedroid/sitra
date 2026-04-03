@@ -1,1 +1,1 @@
-i18n.gettext('io.github.ronniedroid.sitra', preset: 'glib')
+i18n.gettext('io.github.sitraorg.sitra', preset: 'glib')
