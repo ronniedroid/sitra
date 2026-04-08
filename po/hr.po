@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: io.github.ronniedroid.sitra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-31 15:13+0300\n"
-"PO-Revision-Date: 2026-03-21 16:06+0100\n"
+"PO-Revision-Date: 2026-03-27 11:23+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: \n"
 "Language: hr\n"
@@ -160,7 +160,7 @@ msgid ""
 "Fonts where all characters have equal width; commonly used for code and "
 "terminals."
 msgstr ""
-"Fontovi u kojima su svi znakovi jednake širine; Često se koristi za "
+"Fontovi u kojima su svi znakovi jednake širine; često se koristi za "
 "programski kod i terminale."
 
 #: src/data_translations.vala:11
@@ -387,7 +387,7 @@ msgstr "CDN"
 
 #: src/integration_dialog.blp:133
 msgid "Chose from the options below"
-msgstr "Odaberite jednu od opcija u nastavku"
+msgstr "Odaberi jednu od donjih opcija"
 
 #: src/integration_dialog.blp:137
 msgid "Use the static version instead of variable font"
@@ -406,9 +406,8 @@ msgid "Style"
 msgstr "Stil"
 
 #: src/integration_dialog.blp:160 src/window.vala:394
-#, fuzzy
 msgid "Display"
-msgstr "Ekran"
+msgstr "Naslovni"
 
 #: src/integration_dialog.blp:174
 msgid "Format"
@@ -416,7 +415,7 @@ msgstr "Format"
 
 #: src/integration_dialog.blp:187
 msgid "Copy below code to your global CSS"
-msgstr "Kopirajte donji kod u svoj globalni CSS"
+msgstr "Kopiraj donji kod u svoj globalni CSS"
 
 #: src/integration_dialog.vala:321
 msgid "Copied to clipboard"
@@ -455,7 +454,7 @@ msgstr "Dobro došli u Sitra"
 
 #: src/window.blp:111
 msgid "Please select a font to preview it here"
-msgstr "Odaberite font za pregled ovdje"
+msgstr "Odaberi font i pregledaj ga ovdje"
 
 #: src/window.blp:128
 msgid "Reload"
@@ -463,7 +462,7 @@ msgstr "Učitaj ponovo"
 
 #: src/window.blp:129
 msgid "You are not connected to the internet, font preview won't work"
-msgstr "Niste povezan na internet, pregled fonta neće raditi"
+msgstr "Ne postoji veza s internetom, pregled fonta neće raditi"
 
 #: src/window.blp:167
 msgid "Font Size"
@@ -507,12 +506,12 @@ msgstr "Koristi u projektu"
 
 #: src/window.blp:354
 msgid "No Internet connection"
-msgstr "Nema internetske veze"
+msgstr "Ne postoji veza s internetom"
 
 #: src/window.blp:355
 msgid ""
 "You are not connected to the internet, font previews can't work offline."
-msgstr "Niste povezani na internet, pregledi fontova ne mogu raditi offline."
+msgstr "Ne postoji veza s internetom, pregledi fontova ne mogu raditi offline."
 
 #: src/window.blp:369
 msgid "Keyboard Shortcuts"
@@ -524,7 +523,7 @@ msgstr "O aplikaciji"
 
 #: src/window.vala:199 src/window.vala:399
 msgid "Variable"
-msgstr "Varijabla"
+msgstr "Varijabilni"
 
 #: src/window.vala:335
 #, c-format
@@ -568,44 +567,8 @@ msgstr "Ikone"
 
 #: src/window.vala:436
 msgid "No preview available"
-msgstr "Nema dostupnog pregleda"
+msgstr "Pregled nije dostupan"
 
 #: src/window.vala:469
 msgid " Extended"
 msgstr " Prošireno"
-
-#~ msgid ""
-#~ "Fonts that do not fit standard categories or are highly experimental or "
-#~ "mixed-style."
-#~ msgstr ""
-#~ "خطوط لا تندرج تحت فئات قياسية أو هي خطوط تجريبية أو ذات أنماط مختلطة."
-
-#~ msgid "No description available"
-#~ msgstr "لا يوجد وصف متاح"
-
-#, c-format
-#~ msgid "Font '%s' is already installed"
-#~ msgstr "الخط '%s' مثبت بالفعل"
-
-#~ msgid "Installation cancelled"
-#~ msgstr "تم إلغاء التثبيت"
-
-#, c-format
-#~ msgid "Font '%s' is not installed"
-#~ msgstr "الخط '%s' غير مثبت"
-
-#, c-format
-#~ msgid "Failed to save installed fonts database after uninstallation: %s"
-#~ msgstr "فشل حفظ قاعدة بيانات الخطوط المثبتة بعد إلغاء التثبيت: %s"
-
-#, c-format
-#~ msgid "Failed to download font file: HTTP %u"
-#~ msgstr "فشل تنزيل ملف الخط: HTTP %u"
-
-#, c-format
-#~ msgid "Failed to download font file: %s"
-#~ msgstr "فشل تنزيل ملف الخط: %s"
-
-#, c-format
-#~ msgid "Failed to save installed fonts database: %s"
-#~ msgstr "فشل حفظ قاعدة بيانات الخطوط المثبتة: %s"
