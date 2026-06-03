@@ -38,6 +38,16 @@
     <color type="primary" scheme_preference="dark">#ff8d00</color>
   </branding>
 
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/sitraorg/sitra/main/data/screenshots/font-preview-page.png</image>
@@ -62,6 +72,13 @@
   </screenshots>
 
   <releases>
+    <release version="0.1.2" date="2026-06-03">
+      <description translate="no">
+        <ul>
+          <li>Fix crash on preview when locale was not found</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.1" date="2026-03-08">
       <description translate="no">
         <ul>
