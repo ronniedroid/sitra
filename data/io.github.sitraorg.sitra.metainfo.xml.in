@@ -6,6 +6,7 @@
 
   <name>Sitra</name>
   <summary>Get fonts from online sources</summary>
+  <summary xml:lang="hr">Preuzimanje fontova s internetskih izvora</summary>
   <description>
     <p>
       Get your fonts from online sources with a sleek, friendly user interface.
@@ -17,6 +18,17 @@
       <li>Get code to use the font in your project, via CDN or npm from fontsource</li>
       <li>Download the fonts on your device in ttf format from google</li>
       <li>Filter font by category using the toggle buttons or by family and subset using search</li>
+    </ul>
+    <p xml:lang="hr">
+      Preuzmite fontove s internetskih izvora uz elegantno i intuitivno korisničko sučelje.
+      Sitra pruža besprijekorno iskustvo za instaliranje, deinstaliranje i pregled fontova.
+    </p>
+    <ul>
+      <li>Prikaz popisa fontova koji su dostupni na Google Fonts</li>
+      <li>Pregled fontova koristeći Fontsource CDN za privatnost</li>
+      <li>Preuzimanje koda za korištenje fonta u svom projektu, putem CDN-a ili NPM-a iz fontsource-a</li>
+      <li>Preuzimanje fontova na svoj uređaj u ttf formatu s Googlea</li>
+      <li>Filtriranje fonta po kategoriji pomoću tipki za uključivanje/isključivanje ili po obitelji i podskupu koristeći pretragu</li>
     </ul>
   </description>
 
