@@ -1,0 +1,582 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.sitraorg.sitra package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ronnie Nissan <ronnie.nissan@proton.me>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: io.github.sitraorg.sitra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-03 12:37+0300\n"
+"PO-Revision-Date: 2026-08-01 13:28+0300\n"
+"Last-Translator: Ronnie Nissan <ronnie.nissan@proton.me>\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 50.0\n"
+"Plural-Forms: nplurals=6; plural= n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: data/io.github.sitraorg.sitra.desktop.in:2
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:7 src/window.blp:5
+#: src/window.blp:27
+msgid "Sitra"
+msgstr "Sitra"
+
+#: data/io.github.sitraorg.sitra.desktop.in:3
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:8
+msgid "Get fonts from online sources"
+msgstr "Çevrimiçi kaynaklardan yazı tiplerini indirin"
+
+#: data/io.github.sitraorg.sitra.desktop.in:9
+msgid "Fonts;Install;"
+msgstr "Yazı Tipleri;Kur;"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:10
+msgid ""
+"Get your fonts from online sources with a sleek, friendly user interface. "
+"Sitra provides a seamless experience for installing, uninstalling and "
+"previewing fonts."
+msgstr ""
+"Çevrimiçi kaynaklardan yazı tiplerini şık ve kullanıcı dostu bir arayüzle "
+"edinin. Sitra, yazı tiplerini kurma, kaldırma ve önizleme için sorunsuz bir "
+"deneyim sunar."
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:15
+msgid "List fonts available on Google Fonts"
+msgstr "Google Fonts'ta bulunan yazı tiplerini listeler"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:16
+msgid "Preview the fonts using Fontsource CDN for privacy"
+msgstr "Gizlilik için Fontsource CDN kullanarak yazı tiplerini önizleyin"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:17
+msgid ""
+"Get code to use the font in your project, via CDN or npm from fontsource"
+msgstr ""
+"Fontsource'dan CDN veya npm aracılığıyla projenizde kullanmak için kod alın"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:18
+msgid "Download the fonts on your device in ttf format from google"
+msgstr "Google'dan yazı tiplerini ttf formatında cihazınıza indirin"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:19
+msgid ""
+"Filter font by category using the toggle buttons or by family and subset "
+"using search"
+msgstr ""
+"Yazı tiplerini kategoriye göre geçiş düğmeleriyle veya aile ve alt kümeye "
+"göre arama kullanarak filtreleyin"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:24
+msgid "Ronnie Nissan"
+msgstr "Ronnie Nissan"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:44
+msgid "Showcasing font preview"
+msgstr "Yazı tipi önizlemesi gösterimi"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:48
+msgid "Showcasing font preview when a font is already installed"
+msgstr "Bir yazı tipi zaten kuruluyken önizleme gösterimi"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:52
+msgid "Showcasing font preview with different subsets, Arabic in this case"
+msgstr "Farklı alt kümelerle yazı tipi önizlemesi gösterimi, bu örnekte Arapça"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:56
+msgid "Showcasing Use in an Project dialog, showing npm instructions"
+msgstr ""
+"Projede Kullan iletişim kutusu gösterimi, npm talimatlarını görüntülüyor"
+
+#: data/io.github.sitraorg.sitra.metainfo.xml.in:60
+msgid "Showcasing Use in an Project dialog, showing cdn instructions"
+msgstr ""
+"Projede Kullan iletişim kutusu gösterimi, cdn talimatlarını görüntülüyor"
+
+#: src/application.vala:51
+msgid "sitra"
+msgstr "sitra"
+
+#: src/application.vala:53
+msgid "Sitra helps you install fonts from online sources on your system"
+msgstr ""
+"Sitra, sisteminize çevrimiçi kaynaklardan yazı tipleri kurmanıza yardımcı "
+"olur"
+
+#: src/application.vala:59
+msgid "translator-credits"
+msgstr "çevirmen-bilgileri"
+
+#: src/application.vala:67
+msgid "Concessio"
+msgstr "Concessio"
+
+#: src/application.vala:67
+msgid "Understand file permissions"
+msgstr "Dosya izinlerini anlayın"
+
+#: src/application.vala:68
+msgid "Embellish"
+msgstr "Embellish"
+
+#: src/application.vala:68
+msgid "Install Nerd Fonts"
+msgstr "Nerd Fonts'leri kurun"
+
+#. These strings are extracted for translation
+#: src/data_translations.vala:6
+msgid ""
+"Fonts without decorative strokes; clean and modern, commonly used for UI and "
+"body text."
+msgstr ""
+"Süsleme çizgileri olmayan yazı tipleri; temiz ve modern, genellikle arayüz "
+"ve metin gövdesi için kullanılır."
+
+#: src/data_translations.vala:7
+msgid ""
+"Decorative fonts designed for headlines and large sizes, not suitable for "
+"long text."
+msgstr ""
+"Başlıklar ve büyük boyutlar için tasarlanmış dekoratif yazı tipleri, uzun "
+"metinler için uygun değildir."
+
+#: src/data_translations.vala:8
+msgid ""
+"Fonts with decorative strokes at the ends of letters; traditional and often "
+"used in print."
+msgstr ""
+"Harflerin uçlarında süsleme çizgileri bulunan yazı tipleri; geleneksel ve "
+"genellikle baskıda kullanılır."
+
+#: src/data_translations.vala:9
+msgid ""
+"Fonts that mimic handwritten or cursive styles; informal and expressive."
+msgstr ""
+"El yazısını veya italik stilleri taklit eden yazı tipleri; resmi olmayan ve "
+"ifade gücü yüksektir."
+
+#: src/data_translations.vala:10
+msgid ""
+"Fonts where all characters have equal width; commonly used for code and "
+"terminals."
+msgstr ""
+"Tüm karakterleri eşit genişliğe sahip yazı tipleri; genellikle kod ve "
+"terminaller için kullanılır."
+
+#: src/data_translations.vala:11
+msgid ""
+"Symbol-based fonts containing pictograms or UI icons instead of letters."
+msgstr ""
+"Harfler yerine piktogramlar veya arayüz simgeleri içeren sembol tabanlı yazı "
+"tipleri."
+
+#: src/data_translations.vala:12
+msgid ""
+"Permissive licence allowing almost unrestricted use, modification, and "
+"distribution."
+msgstr ""
+"Neredeyse sınırsız kullanım, değişiklik ve dağıtıma izin veren izin verici "
+"lisans."
+
+#: src/data_translations.vala:13
+msgid ""
+"Free to use, modify, and distribute, with conditions: no selling and "
+"original licence must be included."
+msgstr ""
+"Kullanımı, değiştirilmesi ve dağıtılması ücretsizdir, koşullar: satılamaz ve "
+"orijinal lisans eklenmelidir."
+
+#: src/data_translations.vala:14
+msgid ""
+"Permissive, requires attribution, notice of changes, and inclusion of NOTICE "
+"file. Modified code can use a different licence."
+msgstr ""
+"İzin verici, atıf, değişiklik bildirimi ve NOTICE dosyasının eklenmesini "
+"gerektirir. Değiştirilen kod farklı bir lisans kullanabilir."
+
+#: src/data_translations.vala:15
+msgid "Permissive, requires attribution and licence file."
+msgstr "İzin verici, atıf ve lisans dosyası gerektirir."
+
+#: src/data_translations.vala:16 src/data_translations.vala:17
+msgid ""
+"Permissive license allowing unrestricted use, modification, and distribution."
+msgstr ""
+"Sınırsız kullanım, değişiklik ve dağıtıma izin veren izin verici lisans."
+
+#: src/data_translations.vala:18
+msgid "arabic"
+msgstr "arapça"
+
+#: src/data_translations.vala:19
+msgid "armenian"
+msgstr "ermenice"
+
+#: src/data_translations.vala:20
+msgid "bengali"
+msgstr "bengalce"
+
+#: src/data_translations.vala:21
+msgid "canadian-aboriginal"
+msgstr "kanada yerli dilleri"
+
+#: src/data_translations.vala:22
+msgid "cherokee"
+msgstr "cerokice"
+
+#: src/data_translations.vala:23
+msgid "cyrillic"
+msgstr "kiril"
+
+#: src/data_translations.vala:24
+msgid "cyrillic-ext"
+msgstr "kiril (genişletilmiş)"
+
+#: src/data_translations.vala:25
+msgid "devanagari"
+msgstr "devanagari"
+
+#: src/data_translations.vala:26
+msgid "ethiopic"
+msgstr "etiyopya"
+
+#: src/data_translations.vala:27
+msgid "georgian"
+msgstr "gürcüce"
+
+#: src/data_translations.vala:28
+msgid "greek"
+msgstr "yunanca"
+
+#: src/data_translations.vala:29
+msgid "greek-ext"
+msgstr "yunanca (genişletilmiş)"
+
+#: src/data_translations.vala:30
+msgid "gujarati"
+msgstr "guceratça"
+
+#: src/data_translations.vala:31
+msgid "gurmukhi"
+msgstr "gurmukhi"
+
+#: src/data_translations.vala:32
+msgid "hebrew"
+msgstr "ibranice"
+
+#: src/data_translations.vala:33
+msgid "japanese"
+msgstr "japonca"
+
+#: src/data_translations.vala:34
+msgid "kannada"
+msgstr "kannada"
+
+#: src/data_translations.vala:35
+msgid "khmer"
+msgstr "kmerce"
+
+#: src/data_translations.vala:36
+msgid "korean"
+msgstr "korece"
+
+#: src/data_translations.vala:37
+msgid "latin"
+msgstr "latin"
+
+#: src/data_translations.vala:38
+msgid "latin-ext"
+msgstr "latin (genişletilmiş)"
+
+#: src/data_translations.vala:39
+msgid "malayalam"
+msgstr "malayalam"
+
+#: src/data_translations.vala:40
+msgid "myanmar"
+msgstr "birmanya"
+
+#: src/data_translations.vala:41
+msgid "oriya"
+msgstr "oriya"
+
+#: src/data_translations.vala:42
+msgid "sinhala"
+msgstr "sinhala"
+
+#: src/data_translations.vala:43
+msgid "syriac"
+msgstr "süryanice"
+
+#: src/data_translations.vala:44
+msgid "tamil"
+msgstr "tamilce"
+
+#: src/data_translations.vala:45
+msgid "telugu"
+msgstr "telugu"
+
+#: src/data_translations.vala:46
+msgid "thai"
+msgstr "tayca"
+
+#: src/data_translations.vala:47
+msgid "tibetan"
+msgstr "tibetçe"
+
+#: src/data_translations.vala:48
+msgid "vietnamese"
+msgstr "vietnamca"
+
+#: src/data_translations.vala:49
+msgid "kayah-li"
+msgstr "kayah-li"
+
+#: src/integration_dialog.blp:5
+msgid "Integration"
+msgstr "Entegrasyon"
+
+#: src/integration_dialog.blp:24 src/integration_dialog.blp:29
+#: src/window.blp:274
+msgid "Install"
+msgstr "Kur"
+
+#: src/integration_dialog.blp:30
+msgid "Install the font using npm or yarn"
+msgstr "Yazı tipini npm veya yarn kullanarak kurun"
+
+#: src/integration_dialog.blp:33 src/integration_dialog.blp:136
+msgid "Use Static Version"
+msgstr "Statik Sürümü Kullan"
+
+#: src/integration_dialog.blp:34
+msgid "Install the static version instead of variable font"
+msgstr "Değişken yazı tipi yerine statik sürümü kurun"
+
+#: src/integration_dialog.blp:38
+msgid "NPM"
+msgstr "NPM"
+
+#: src/integration_dialog.blp:49 src/integration_dialog.blp:69
+#: src/integration_dialog.blp:94 src/integration_dialog.blp:115
+#: src/integration_dialog.blp:220 src/integration_dialog.blp:244
+msgid "Copy to clipboard"
+msgstr "Panoya kopyala"
+
+#: src/integration_dialog.blp:58
+msgid "Yarn"
+msgstr "Yarn"
+
+#: src/integration_dialog.blp:79
+msgid "Import"
+msgstr "İçe Aktar"
+
+#: src/integration_dialog.blp:80
+msgid "Import into CSS"
+msgstr "CSS'ye İçe Aktar"
+
+#: src/integration_dialog.blp:103 src/integration_dialog.blp:230
+msgid "Use in CSS"
+msgstr "CSS'de Kullan"
+
+#: src/integration_dialog.blp:128
+msgid "CDN"
+msgstr "CDN"
+
+#: src/integration_dialog.blp:133
+msgid "Chose from the options below"
+msgstr "Aşağıdaki seçeneklerden birini seçin"
+
+#: src/integration_dialog.blp:137
+msgid "Use the static version instead of variable font"
+msgstr "Değişken yazı tipi yerine statik sürümü kullanın"
+
+#: src/integration_dialog.blp:141
+msgid "Subset"
+msgstr "Alt Küme"
+
+#: src/integration_dialog.blp:145
+msgid "Weight"
+msgstr "Kalınlık"
+
+#: src/integration_dialog.blp:149
+msgid "Style"
+msgstr "Stil"
+
+#: src/integration_dialog.blp:160 src/window.vala:403
+msgid "Display"
+msgstr "Gösterim"
+
+#: src/integration_dialog.blp:174
+msgid "Format"
+msgstr "Biçim"
+
+#: src/integration_dialog.blp:187
+msgid "Copy below code to your global CSS"
+msgstr "Aşağıdaki kodu global CSS'inize kopyalayın"
+
+#: src/integration_dialog.vala:321
+msgid "Copied to clipboard"
+msgstr "Panoya kopyalandı"
+
+#: src/shortcuts-dialog.blp:7
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Genel"
+
+#: src/shortcuts-dialog.blp:10
+msgctxt "shortcut window"
+msgid "Search Fonts"
+msgstr "Yazı Tiplerinde Ara"
+
+#: src/shortcuts-dialog.blp:15
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Kısayolları Göster"
+
+#: src/shortcuts-dialog.blp:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Çık"
+
+#: src/window.blp:43
+msgid "Main menu"
+msgstr "Ana menü"
+
+#: src/window.blp:55
+msgid "Search fonts"
+msgstr "Yazı tiplerinde ara"
+
+#: src/window.blp:96
+msgid "Preview"
+msgstr "Önizleme"
+
+#: src/window.blp:110
+msgid "Welcome to Sitra"
+msgstr "Sitra'ya Hoş Geldiniz"
+
+#: src/window.blp:111
+msgid "Please select a font to preview it here"
+msgstr "Önizlemek için lütfen bir yazı tipi seçin"
+
+#: src/window.blp:128
+msgid "Reload"
+msgstr "Yeniden Yükle"
+
+#: src/window.blp:129
+msgid "You are not connected to the internet, font preview won't work"
+msgstr "İnternete bağlı değilsiniz, yazı tipi önizlemesi çalışmaz"
+
+#: src/window.blp:166
+msgid "Font Size"
+msgstr "Yazı Tipi Boyutu"
+
+#: src/window.blp:181
+msgid "Line Height"
+msgstr "Satır Yüksekliği"
+
+#: src/window.blp:196
+msgid "Letter Spacing"
+msgstr "Harf Aralığı"
+
+#: src/window.blp:201
+msgid "Italic"
+msgstr "İtalik"
+
+#: src/window.blp:229
+msgid "Font Name"
+msgstr "Yazı Tipi Adı"
+
+#: src/window.blp:248
+msgid "Category"
+msgstr "Kategori"
+
+#: src/window.blp:261
+msgid "License"
+msgstr "Lisans"
+
+#: src/window.blp:293
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/window.blp:314
+msgid "Uninstall"
+msgstr "Kaldır"
+
+#: src/window.blp:324
+msgid "Use in a Project"
+msgstr "Projede Kullan"
+
+#: src/window.blp:354
+msgid "No Internet connection"
+msgstr "İnternet Bağlantısı Yok"
+
+#: src/window.blp:355
+msgid ""
+"You are not connected to the internet, font previews can't work offline."
+msgstr ""
+"İnternete bağlı değilsiniz, yazı tipi önizlemeleri çevrimdışı çalışamaz."
+
+#: src/window.blp:369
+msgid "Keyboard Shortcuts"
+msgstr "Klavye Kısayolları"
+
+#: src/window.blp:374
+msgid "About App"
+msgstr "Uygulama Hakkında"
+
+#: src/window.vala:208 src/window.vala:408
+msgid "Variable"
+msgstr "Değişken"
+
+#: src/window.vala:344
+#, c-format
+msgid "Font '%s' installed successfully"
+msgstr "'%s' yazı tipi başarıyla kuruldu"
+
+#: src/window.vala:351
+#, c-format
+msgid "Failed to install '%s': %s"
+msgstr "'%s' kurulumu başarısız oldu: %s"
+
+#: src/window.vala:359
+#, c-format
+msgid "Font '%s' uninstalled successfully"
+msgstr "'%s' yazı tipi başarıyla kaldırıldı"
+
+#: src/window.vala:364
+#, c-format
+msgid "Failed to uninstall '%s': %s"
+msgstr "'%s' kaldırma işlemi başarısız oldu: %s"
+
+#: src/window.vala:401
+msgid "Sans Serif"
+msgstr "Sans Serif"
+
+#: src/window.vala:402
+msgid "Serif"
+msgstr "Serif"
+
+#: src/window.vala:404
+msgid "Handwriting"
+msgstr "El Yazısı"
+
+#: src/window.vala:405
+msgid "Monospace"
+msgstr "Eş Aralıklı"
+
+#: src/window.vala:406
+msgid "Icons"
+msgstr "Simgeler"
+
+#: src/window.vala:463
+msgid "No preview available"
+msgstr "Önizleme mevcut değil"
+
+#: src/window.vala:496
+msgid " Extended"
+msgstr " Genişletilmiş"

@@ -19,12 +19,8 @@
  */
 
 int main (string[] args) {
-    unowned string? current_locale = Intl.setlocale (LocaleCategory.ALL, "");
-    if (current_locale == null) {
-        Environment.set_variable ("LC_ALL", "C.UTF-8", true);
-        Environment.set_variable ("LANG", "C.UTF-8", true);
-        Intl.setlocale (LocaleCategory.ALL, "");
-    }
+    Intl.setlocale (LocaleCategory.ALL, "");
+
     Intl.bindtextdomain (Config.GETTEXT_PACKAGE, Config.LOCALEDIR);
     Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
     Intl.textdomain (Config.GETTEXT_PACKAGE);
