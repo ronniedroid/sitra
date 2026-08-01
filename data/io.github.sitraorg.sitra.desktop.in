@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Sitra
 Comment=Get fonts from online sources
-Exec=io.github.sitraorg.sitra
+Exec=sitra
 Icon=io.github.sitraorg.sitra
 Terminal=false
 Type=Application
