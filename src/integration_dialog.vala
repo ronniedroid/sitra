@@ -26,6 +26,8 @@ public class Sitra.IntegrationDialog : Adw.Dialog {
     [GtkChild] private unowned Adw.ToastOverlay toast_overlay;
     [GtkChild] private unowned Adw.ActionRow npm_row;
     [GtkChild] private unowned Adw.ActionRow yarn_row;
+    [GtkChild] private unowned Adw.ActionRow pnpm_row;
+    [GtkChild] private unowned Adw.ActionRow bun_row;
     [GtkChild] private unowned Adw.ActionRow css_import_row;
     [GtkChild] private unowned Adw.ActionRow css_usage_row;
     [GtkChild] private unowned Gtk.Label cdn_css_code_label;
@@ -37,6 +39,8 @@ public class Sitra.IntegrationDialog : Adw.Dialog {
     [GtkChild] private unowned Adw.ComboRow cdn_format_row;
     [GtkChild] private unowned Gtk.Button copy_npm_button;
     [GtkChild] private unowned Gtk.Button copy_yarn_button;
+    [GtkChild] private unowned Gtk.Button copy_pnpm_button;
+    [GtkChild] private unowned Gtk.Button copy_bun_button;
     [GtkChild] private unowned Gtk.Button copy_css_import_button;
     [GtkChild] private unowned Gtk.Button copy_css_usage_button;
     [GtkChild] private unowned Gtk.Button copy_cdn_usage_button;
@@ -94,6 +98,12 @@ public class Sitra.IntegrationDialog : Adw.Dialog {
 
         // Yarn instruction
         yarn_row.subtitle = @"yarn add $(scope)/$(current_package_name)";
+
+        // PNPM instruction
+        pnpm_row.subtitle = @"pnpm add $(scope)/$(current_package_name)";
+
+        // Bun instruction
+        bun_row.subtitle = @"bun add $(scope)/$(current_package_name)";
 
         // CSS import instruction
         css_import_row.title = @"import '$(scope)/$(current_package_name)';";
@@ -295,6 +305,14 @@ public class Sitra.IntegrationDialog : Adw.Dialog {
 
         copy_yarn_button.clicked.connect (() => {
             copy_to_clipboard (yarn_row.subtitle);
+        });
+
+        copy_pnpm_button.clicked.connect (() => {
+            copy_to_clipboard (pnpm_row.subtitle);
+        });
+
+        copy_bun_button.clicked.connect (() => {
+            copy_to_clipboard (bun_row.subtitle);
         });
 
         copy_css_import_button.clicked.connect (() => {

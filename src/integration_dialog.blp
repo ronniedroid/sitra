@@ -27,7 +27,7 @@ template $SitraIntegrationDialog: Adw.Dialog {
           child: Adw.PreferencesPage {
             Adw.PreferencesGroup {
               title: _("Install");
-              description: _("Install the font using npm or yarn");
+              description: _("Install the font using npm, yarn, pnpm, or bun");
 
               Adw.SwitchRow install_static_switch_row {
                 title: _("Use Static Version");
@@ -64,6 +64,46 @@ template $SitraIntegrationDialog: Adw.Dialog {
 
                 [suffix]
                 Button copy_yarn_button {
+                  icon-name: "edit-copy-symbolic";
+                  valign: center;
+                  tooltip-text: _("Copy to clipboard");
+
+                  styles [
+                    "flat",
+                  ]
+                }
+              }
+
+              Adw.ActionRow pnpm_row {
+                title: _("PNPM");
+                subtitle-selectable: true;
+
+                styles [
+                  "monospace",
+                ]
+
+                [suffix]
+                Button copy_pnpm_button {
+                  icon-name: "edit-copy-symbolic";
+                  valign: center;
+                  tooltip-text: _("Copy to clipboard");
+
+                  styles [
+                    "flat",
+                  ]
+                }
+              }
+
+              Adw.ActionRow bun_row {
+                title: _("Bun");
+                subtitle-selectable: true;
+
+                styles [
+                  "monospace",
+                ]
+
+                [suffix]
+                Button copy_bun_button {
                   icon-name: "edit-copy-symbolic";
                   valign: center;
                   tooltip-text: _("Copy to clipboard");
