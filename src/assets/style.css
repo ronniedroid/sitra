@@ -39,3 +39,7 @@
 .progress-button-label {
     padding: 10px 32px;
 }
+
+.installed_check {
+    color: var(--accent-color);
+}

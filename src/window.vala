@@ -56,10 +56,11 @@ public class Sitra.Window : Adw.ApplicationWindow {
     private WebView web_view;
     private Gee.HashMap<string, Gtk.ToggleButton> category_toggles;
     private Gtk.CustomFilter filter;
+    private Gtk.CustomSorter sorter;
 
     // Libsitra managers
     private Libsitra.Fonts fonts_manager;
-    private Libsitra.Library library;  // Changed from Sitra.Managers.FontManager
+    private Libsitra.Library library;
 
     // Sitra-specific managers
     private Sitra.Managers.PreviewManager preview_manager;
@@ -86,14 +87,14 @@ public class Sitra.Window : Adw.ApplicationWindow {
         network_helper = Sitra.Helpers.NetworkHelper.get_instance ();
 
         // actions
-        var searchAction = new SimpleAction("search", null);
-        searchAction.activate.connect(() => {
+        var searchAction = new SimpleAction ("search", null);
+        searchAction.activate.connect (() => {
             search_bar.search_mode_enabled = !search_bar.search_mode_enabled;
         });
 
-        this.add_action(searchAction);
+        this.add_action (searchAction);
 
-       // house keeping
+        // house keeping
         banner.set_revealed (false);
 
         // --- Load Preview Texts ---
@@ -149,9 +150,16 @@ public class Sitra.Window : Adw.ApplicationWindow {
             store.append (font);
         }
 
-        var sorter = new Gtk.CustomSorter ((a, b) => {
+        sorter = new Gtk.CustomSorter ((a, b) => {
             var fa = (Libsitra.Font) a;
             var fb = (Libsitra.Font) b;
+
+            bool installed_a = library.is_installed (fa);
+            bool installed_b = library.is_installed (fb);
+
+            if (installed_a != installed_b)
+                return installed_a ? -1 : 1;
+
             int score_a = fa.subsets.size + fa.weights.size;
             int score_b = fb.subsets.size + fb.weights.size;
             if (score_a != score_b)
@@ -162,8 +170,8 @@ public class Sitra.Window : Adw.ApplicationWindow {
         var sorted_model = new Gtk.SortListModel (store, sorter);
 
         var fonts_filter = new Sitra.Helpers.FontsFilterHelper (
-            search_entry,
-            category_toggles
+                                                                search_entry,
+                                                                category_toggles
         );
         filter = fonts_filter.filter;
 
@@ -189,9 +197,18 @@ public class Sitra.Window : Adw.ApplicationWindow {
             box.margin_top = 6;
             box.margin_bottom = 6;
 
+            var title_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+
             var family_label = new Gtk.Label ("");
             family_label.set_halign (Gtk.Align.START);
-            box.append (family_label);
+            title_box.append (family_label);
+
+            var installed_badge = new Gtk.Label ("✔");
+            installed_badge.set_css_classes ({ "installed_check" });
+            installed_badge.set_tooltip_text (_("Installed"));
+            title_box.append (installed_badge);
+
+            box.append (title_box);
 
             var info_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
 
@@ -216,17 +233,23 @@ public class Sitra.Window : Adw.ApplicationWindow {
         factory.bind.connect ((obj) => {
             var list_item = (Gtk.ListItem) obj;
             var box = (Gtk.Box) list_item.child;
+            var title_box = (Gtk.Box) box.get_first_child ();
             var info_box = (Gtk.Box) box.get_last_child ();
+
+            var family_label = (Gtk.Label) title_box.get_first_child ();
+            var installed_badge = (Gtk.Label) title_box.get_last_child ();
+
             var category_badge = (Gtk.Label) info_box.get_first_child ();
+            var separator = (Gtk.Label) category_badge.get_next_sibling ();
             var variable_badge = (Gtk.Label) info_box.get_last_child ();
-            var separator = (Gtk.Label) info_box.get_first_child ().get_next_sibling ();
-            var family_label = (Gtk.Label) box.get_first_child ();
 
             var font = (Libsitra.Font) list_item.item;
+            bool is_installed = library.is_installed (font);
+
+            family_label.set_label (font.family);
+            installed_badge.visible = is_installed;
 
             category_badge.set_label (format_category_labels (font.category));
-            family_label.set_label (font.family);
-
             separator.visible = font.variable;
             variable_badge.visible = font.variable;
         });
@@ -286,10 +309,10 @@ public class Sitra.Window : Adw.ApplicationWindow {
         });
 
         italic_toggle.bind_property (
-            "active",
-            preview_manager,
-            "italic",
-            BindingFlags.DEFAULT
+                                     "active",
+                                     preview_manager,
+                                     "italic",
+                                     BindingFlags.DEFAULT
         );
 
         bind_dropdown_to_property (font_size_dropdown, preview_manager, "font-size");
@@ -347,6 +370,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
                 if (is_selected_font (font_family)) {
                     update_install_button_state ();
                 }
+                sorter.changed (Gtk.SorterChange.DIFFERENT);
             } else {
                 var toast = new Adw.Toast (_("Failed to install '%s': %s").printf (font_family, error_message ?? "Unknown error"));
                 toast.timeout = 5;
@@ -360,6 +384,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
                 toast.timeout = 3;
                 toast_overlay.add_toast (toast);
                 update_install_button_state ();
+                sorter.changed (Gtk.SorterChange.DIFFERENT);
             } else {
                 var toast = new Adw.Toast (_("Failed to uninstall '%s': %s").printf (font_family, error_message ?? "Unknown error"));
                 toast.timeout = 5;
@@ -383,7 +408,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
         });
 
         cancel_button.clicked.connect (() => {
-            library.cancel ();  // Changed from font_manager
+            library.cancel ();
         });
 
         uninstall_button.clicked.connect (() => {
@@ -488,7 +513,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
                     break;
                 }
             }
-            if (excluded) continue;
+            if (excluded)continue;
 
             string label;
             if (subset.has_suffix ("-ext")) {
@@ -554,18 +579,18 @@ public class Sitra.Window : Adw.ApplicationWindow {
                                             Object target,
                                             string property_name) {
         dropdown.bind_property (
-            "selected-item",
-            target,
-            property_name,
-            BindingFlags.DEFAULT,
-            (binding, from_value, ref to_value) => {
-                var selected = from_value.get_object () as Gtk.StringObject;
-                if (selected != null) {
-                    to_value.set_string (selected.string);
-                    return true;
-                }
-                return false;
-            });
+                                "selected-item",
+                                target,
+                                property_name,
+                                BindingFlags.DEFAULT,
+                                (binding, from_value, ref to_value) => {
+            var selected = from_value.get_object () as Gtk.StringObject;
+            if (selected != null) {
+                to_value.set_string (selected.string);
+                return true;
+            }
+            return false;
+        });
     }
 
     private void update_license_popover (Libsitra.Font font) {
@@ -574,7 +599,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
     }
 
     private void update_category_popover (Libsitra.Font font) {
-        this.category_title.label = format_category_labels(font.category);
+        this.category_title.label = format_category_labels (font.category);
         this.category_description.label = GLib.dgettext (Config.GETTEXT_PACKAGE, categories_manager.describe (font));
     }
 
@@ -596,7 +621,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
 
     private async void install_font_async (Libsitra.Font font) {
         try {
-            yield library.install (font);  // Changed from font_manager
+            yield library.install (font);
         } catch (Error e) {
             warning ("Font installation error: %s", e.message);
         }
@@ -604,7 +629,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
 
     private async void uninstall_font_async (Libsitra.Font font) {
         try {
-            yield library.uninstall (font);  // Changed from font_manager
+            yield library.uninstall (font);
         } catch (Error e) {
             warning ("Font uninstallation error: %s", e.message);
         }
@@ -627,7 +652,7 @@ public class Sitra.Window : Adw.ApplicationWindow {
 
         var font = (Libsitra.Font) fonts_model.selected_item;
 
-        if (library.is_installed (font)) {  // Changed from font_manager
+        if (library.is_installed (font)) {
             install_button.visible = false;
             cancel_button.visible = false;
             uninstall_button.visible = true;
@@ -646,4 +671,3 @@ public class Sitra.Window : Adw.ApplicationWindow {
         }
     }
 }
-
