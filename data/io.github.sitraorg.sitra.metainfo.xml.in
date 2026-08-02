@@ -72,6 +72,15 @@
   </screenshots>
 
   <releases>
+    <release version="0.1.3" date="2026-08-02">
+      <description translate="no">
+        <ul>
+          <li>Added Turkish translations</li>
+          <li>Added a badge to installed fonts</li>
+          <li>Sort installed fonts first</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.2" date="2026-06-03">
       <description translate="no">
         <ul>
